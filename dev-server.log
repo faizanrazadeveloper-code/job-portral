@@ -129,3 +129,12 @@ To help make Turbopack better, report this error by ]8;;https://bugs.nextjs.org
  GET /admin/dashboard 200 in 9.8s (next.js: 8.8s, application-code: 1008ms)
  GET /admin/users 200 in 3.0s (next.js: 2.3s, application-code: 701ms)
  GET /admin/roles-permissions 200 in 264ms (next.js: 16ms, application-code: 248ms)
+ GET /login 200 in 496ms (next.js: 224ms, application-code: 272ms)
+ GET /= 404 in 232ms (next.js: 94ms, application-code: 137ms)
+ GET / 200 in 207ms (next.js: 98ms, application-code: 109ms)
+✓ Compiled in 685ms
+ GET / 200 in 373ms (next.js: 150ms, application-code: 223ms)
+ GET /login 200 in 561ms (next.js: 18ms, application-code: 543ms)
+ GET /login 200 in 275ms (next.js: 15ms, application-code: 260ms)
+ GET / 307 in 224ms (next.js: 23ms, application-code: 201ms)
+ GET /login 200 in 419ms (next.js: 25ms, application-code: 394ms)
