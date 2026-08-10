@@ -1,0 +1,31 @@
+
+> energytail-auth@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.0 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.100.24:3000
+✓ Ready in 2.1s
+✓ Running next.config.ts took 169ms
+
+○ Compiling / ...
+ GET / 200 in 5.3s (next.js: 4.8s, application-code: 429ms)
+ GET /login 200 in 1680ms (next.js: 1149ms, application-code: 532ms)
+ GET /register 200 in 1087ms (next.js: 678ms, application-code: 409ms)
+ GET /forgot-password 200 in 1116ms (next.js: 747ms, application-code: 369ms)
+ GET /reset-password 200 in 915ms (next.js: 690ms, application-code: 225ms)
+ GET /verify-email 200 in 810ms (next.js: 543ms, application-code: 267ms)
+ GET /register 200 in 332ms (next.js: 22ms, application-code: 310ms)
+ GET /reset-password 200 in 136ms (next.js: 13ms, application-code: 123ms)
+ GET /verify-email 200 in 221ms (next.js: 15ms, application-code: 205ms)
+ GET /forgot-password 200 in 216ms (next.js: 14ms, application-code: 202ms)
+ GET / 200 in 90ms (next.js: 9ms, application-code: 81ms)
+ GET /login 200 in 188ms (next.js: 10ms, application-code: 177ms)
+ GET /jobs/5 404 in 1596ms (next.js: 1439ms, application-code: 157ms)
+ GET / 200 in 351ms (next.js: 111ms, application-code: 240ms)
+ GET / 200 in 184ms (next.js: 25ms, application-code: 159ms)
+ GET /login 200 in 198ms (next.js: 12ms, application-code: 186ms)
+ GET /login 200 in 96ms (next.js: 6ms, application-code: 90ms)
+ GET /register 200 in 122ms (next.js: 7ms, application-code: 115ms)
+ GET /register 200 in 269ms (next.js: 15ms, application-code: 254ms)
+ GET /login 200 in 97ms (next.js: 6ms, application-code: 90ms)
