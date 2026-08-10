@@ -1,6 +1,9 @@
 import { Mail, ArrowRight, ShieldCheck } from "lucide-react";
 import HeaderAlt from "@/components/HeaderAlt";
 import FooterAlt from "@/components/FooterAlt";
+import FormField from "@/components/ui/FormField";
+import PrimaryButton from "@/components/ui/PrimaryButton";
+import Divider from "@/components/ui/Divider";
 import { GoogleIcon } from "@/components/SocialIcons";
 
 const steps = [
@@ -74,31 +77,19 @@ export default function ResetPasswordPage() {
               <p className="text-sm text-slate-500 mt-2">We&apos;ll send you a password reset link to your email.</p>
 
               <form className="mt-6 space-y-4">
-                <div>
-                  <label className="text-sm text-slate-700 font-medium">Email Address</label>
-                  <div className="relative mt-1.5">
-                    <Mail className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
-                    <input
-                      type="email"
-                      placeholder="Enter your registered email"
-                      className="w-full border border-slate-200 rounded-lg pl-9 pr-3 py-3 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500"
-                    />
-                  </div>
-                </div>
+                <FormField
+                  label="Email Address"
+                  type="email"
+                  placeholder="Enter your registered email"
+                  icon={Mail}
+                  paddingClass="pr-3 py-3"
+                />
 
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg py-3 flex items-center justify-center gap-2 text-sm"
-                >
+                <PrimaryButton type="submit" icon={<ArrowRight className="w-4 h-4" />} iconPosition="right">
                   Send Reset Link
-                  <ArrowRight className="w-4 h-4" />
-                </button>
+                </PrimaryButton>
 
-                <div className="flex items-center gap-3 text-xs text-slate-400">
-                  <div className="flex-1 h-px bg-slate-200" />
-                  OR
-                  <div className="flex-1 h-px bg-slate-200" />
-                </div>
+                <Divider label="OR" />
 
                 <button
                   type="button"

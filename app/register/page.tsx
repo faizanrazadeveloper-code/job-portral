@@ -2,7 +2,12 @@ import { Briefcase, Building2, ClipboardList, Bell, User, Mail, Lock, Eye, UserP
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
-import RefineryIllustration from "@/components/RefineryIllustration";
+import AuthLeftPanel from "@/components/auth/AuthLeftPanel";
+import FormField from "@/components/ui/FormField";
+import PrimaryButton from "@/components/ui/PrimaryButton";
+import Divider from "@/components/ui/Divider";
+import SocialAuthButtons from "@/components/ui/SocialAuthButtons";
+import InfoBanner from "@/components/ui/InfoBanner";
 import { GoogleIcon, LinkedinIcon, FacebookIcon } from "@/components/SocialIcons";
 
 const perks = [
@@ -50,27 +55,14 @@ export default function RegisterPage() {
       <main className="mx-auto max-w-7xl px-4 pb-14 flex-1 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 rounded-2xl overflow-hidden shadow-xl border border-slate-100">
           {/* Left panel */}
-          <div className="relative bg-gradient-to-br from-[#0a1a35] to-[#122a5c] p-10 flex flex-col overflow-hidden min-h-[600px]">
-            <h1 className="text-3xl font-extrabold text-white">Create Your Account</h1>
-            <p className="mt-3 text-slate-300 text-sm leading-relaxed max-w-sm">
-              Join Energy Tail and unlock thousands of oil, gas &amp; energy opportunities worldwide.
-            </p>
-            <div className="border-t border-white/10 my-6" />
-            <div className="space-y-5 relative z-10">
-              {perks.map((p) => (
-                <div key={p.title} className="flex items-start gap-3.5">
-                  <div className="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center shrink-0">
-                    <p.icon className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <div className="text-white font-semibold text-sm">{p.title}</div>
-                    <div className="text-slate-400 text-sm mt-0.5 leading-relaxed">{p.desc}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <RefineryIllustration className="absolute bottom-0 left-0 w-full h-40 pointer-events-none" />
-          </div>
+          <AuthLeftPanel
+            title="Create Your Account"
+            subtitle="Join Energy Tail and unlock thousands of oil, gas &amp; energy opportunities worldwide."
+            perks={perks}
+            minHeight="min-h-[600px]"
+            showDivider
+            illustrationHeight="h-40"
+          />
 
           {/* Right panel */}
           <div className="bg-white p-8 sm:p-10">
@@ -86,78 +78,52 @@ export default function RegisterPage() {
               <div>
                 <h3 className="font-semibold text-slate-800 text-sm mb-3">Personal Information</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="text-sm text-slate-700 font-medium">
-                      First Name <span className="text-red-500">*</span>
-                    </label>
-                    <div className="relative mt-1.5">
-                      <User className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
-                      <input
-                        type="text"
-                        placeholder="Enter your first name"
-                        className="w-full border border-slate-200 rounded-lg pl-9 pr-3 py-2.5 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label className="text-sm text-slate-700 font-medium">
-                      Last Name <span className="text-red-500">*</span>
-                    </label>
-                    <div className="relative mt-1.5">
-                      <User className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
-                      <input
-                        type="text"
-                        placeholder="Enter your last name"
-                        className="w-full border border-slate-200 rounded-lg pl-9 pr-3 py-2.5 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <label className="text-sm text-slate-700 font-medium">
-                  Email Address <span className="text-red-500">*</span>
-                </label>
-                <div className="relative mt-1.5">
-                  <Mail className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
-                  <input
-                    type="email"
-                    placeholder="Enter your email address"
-                    className="w-full border border-slate-200 rounded-lg pl-9 pr-3 py-2.5 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500"
+                  <FormField
+                    label="First Name"
+                    required
+                    placeholder="Enter your first name"
+                    icon={User}
+                  />
+                  <FormField
+                    label="Last Name"
+                    required
+                    placeholder="Enter your last name"
+                    icon={User}
                   />
                 </div>
               </div>
 
+              <FormField
+                label="Email Address"
+                required
+                type="email"
+                placeholder="Enter your email address"
+                icon={Mail}
+              />
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="text-sm text-slate-700 font-medium">
-                    Password <span className="text-red-500">*</span>
-                  </label>
-                  <div className="relative mt-1.5">
-                    <Lock className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
-                    <input
-                      type="password"
-                      placeholder="Create a password"
-                      className="w-full border border-slate-200 rounded-lg pl-9 pr-9 py-2.5 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500"
-                    />
+                <FormField
+                  label="Password"
+                  required
+                  type="password"
+                  placeholder="Create a password"
+                  icon={Lock}
+                  paddingClass="pr-9 py-2.5"
+                  trailing={
                     <Eye className="w-4 h-4 text-slate-400 absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer" />
-                  </div>
-                </div>
-                <div>
-                  <label className="text-sm text-slate-700 font-medium">
-                    Confirm Password <span className="text-red-500">*</span>
-                  </label>
-                  <div className="relative mt-1.5">
-                    <Lock className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
-                    <input
-                      type="password"
-                      placeholder="Confirm your password"
-                      className="w-full border border-slate-200 rounded-lg pl-9 pr-9 py-2.5 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500"
-                    />
+                  }
+                />
+                <FormField
+                  label="Confirm Password"
+                  required
+                  type="password"
+                  placeholder="Confirm your password"
+                  icon={Lock}
+                  paddingClass="pr-9 py-2.5"
+                  trailing={
                     <Eye className="w-4 h-4 text-slate-400 absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer" />
-                  </div>
-                </div>
+                  }
+                />
               </div>
               <p className="text-xs text-slate-400 -mt-3">
                 Password must be at least 8 characters with uppercase, lowercase, number &amp; special character.
@@ -211,31 +177,20 @@ export default function RegisterPage() {
                 </span>
               </label>
 
-              <button
-                type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg py-3 flex items-center justify-center gap-2 text-sm"
-              >
-                <UserPlus className="w-4 h-4" />
+              <PrimaryButton type="submit" icon={<UserPlus className="w-4 h-4" />}>
                 Create Account
-              </button>
+              </PrimaryButton>
 
-              <div className="flex items-center gap-3 text-xs text-slate-400">
-                <div className="flex-1 h-px bg-slate-200" />
-                or register with
-                <div className="flex-1 h-px bg-slate-200" />
-              </div>
+              <Divider label="or register with" />
 
-              <div className="grid grid-cols-3 gap-3">
-                <button type="button" className="flex items-center justify-center gap-1.5 border border-slate-200 rounded-lg py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50">
-                  <GoogleIcon className="w-4 h-4" /> Google
-                </button>
-                <button type="button" className="flex items-center justify-center gap-1.5 border border-slate-200 rounded-lg py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50">
-                  <LinkedinIcon className="w-4 h-4 text-[#0A66C2]" /> LinkedIn
-                </button>
-                <button type="button" className="flex items-center justify-center gap-1.5 border border-slate-200 rounded-lg py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50">
-                  <FacebookIcon className="w-4 h-4 text-[#1877F2]" /> Facebook
-                </button>
-              </div>
+              <SocialAuthButtons
+                providers={[
+                  { label: "Google", icon: GoogleIcon },
+                  { label: "LinkedIn", icon: LinkedinIcon, iconClassName: "text-[#0A66C2]" },
+                  { label: "Facebook", icon: FacebookIcon, iconClassName: "text-[#1877F2]" },
+                ]}
+                columns={3}
+              />
             </form>
           </div>
         </div>
@@ -257,26 +212,21 @@ export default function RegisterPage() {
         </section>
 
         {/* Privacy banner */}
-        <section className="mt-6 bg-blue-50 border border-blue-100 rounded-2xl px-6 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
-            <div className="w-11 h-11 rounded-full bg-blue-600 flex items-center justify-center shrink-0">
-              <ShieldCheck className="w-5 h-5 text-white" />
-            </div>
-            <div>
-              <div className="font-semibold text-slate-800 text-sm">Your privacy is important to us</div>
-              <div className="text-xs text-slate-500 mt-0.5">
-                We will never share your personal information with third parties.
+        <InfoBanner
+          className="mt-6 bg-blue-50 border border-blue-100 px-6 sm:px-8 py-5"
+          icon={<ShieldCheck className="w-5 h-5 text-white" />}
+          title="Your privacy is important to us"
+          desc="We will never share your personal information with third parties."
+          action={
+            <div className="flex items-center gap-2 text-sm text-slate-700 font-medium">
+              <LockIcon className="w-4 h-4 text-blue-600" />
+              <div>
+                Secure Registration
+                <div className="text-xs text-slate-500 font-normal">SSL Encrypted</div>
               </div>
             </div>
-          </div>
-          <div className="flex items-center gap-2 text-sm text-slate-700 font-medium">
-            <LockIcon className="w-4 h-4 text-blue-600" />
-            <div>
-              Secure Registration
-              <div className="text-xs text-slate-500 font-normal">SSL Encrypted</div>
-            </div>
-          </div>
-        </section>
+          }
+        />
       </main>
 
       <Footer />

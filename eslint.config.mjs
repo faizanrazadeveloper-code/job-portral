@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Uploaded reference copy, not part of the active project
+    "energytail-auth/**",
   ]),
 ]);
 

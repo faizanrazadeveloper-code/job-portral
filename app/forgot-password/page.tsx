@@ -2,7 +2,11 @@ import { MailIcon, Clock, ShieldCheck, Mail, Send, Info, Headphones, Lock, UserC
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
-import RefineryIllustration from "@/components/RefineryIllustration";
+import AuthLeftPanel from "@/components/auth/AuthLeftPanel";
+import FormField from "@/components/ui/FormField";
+import PrimaryButton from "@/components/ui/PrimaryButton";
+import Divider from "@/components/ui/Divider";
+import InfoBanner from "@/components/ui/InfoBanner";
 
 const perks = [
   { icon: MailIcon, title: "Secure & Safe", desc: "We use industry-standard security to protect your account." },
@@ -19,27 +23,12 @@ export default function ForgotPasswordPage() {
       <main className="mx-auto max-w-7xl px-4 pb-14 flex-1 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 rounded-2xl overflow-hidden shadow-xl border border-slate-100">
           {/* Left panel */}
-          <div className="relative bg-gradient-to-br from-[#0a1a35] to-[#122a5c] p-10 flex flex-col overflow-hidden min-h-[560px]">
-            <h1 className="text-3xl font-extrabold text-white">Reset Your Password</h1>
-            <p className="mt-3 text-slate-300 text-sm leading-relaxed max-w-sm">
-              No worries! Enter your email address and we&apos;ll send you instructions to reset your password.
-            </p>
-            <div className="border-t border-white/10 my-6" />
-            <div className="space-y-5 relative z-10">
-              {perks.map((p) => (
-                <div key={p.title} className="flex items-start gap-3.5">
-                  <div className="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center shrink-0">
-                    <p.icon className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <div className="text-white font-semibold text-sm">{p.title}</div>
-                    <div className="text-slate-400 text-sm mt-0.5 leading-relaxed">{p.desc}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <RefineryIllustration className="absolute bottom-0 left-0 w-full h-44 pointer-events-none" />
-          </div>
+          <AuthLeftPanel
+            title="Reset Your Password"
+            subtitle="No worries! Enter your email address and we'll send you instructions to reset your password."
+            perks={perks}
+            showDivider
+          />
 
           {/* Right panel */}
           <div className="bg-white p-8 sm:p-10 flex flex-col justify-center items-center text-center">
@@ -52,31 +41,18 @@ export default function ForgotPasswordPage() {
             </p>
 
             <form className="mt-6 w-full max-w-sm space-y-4 text-left">
-              <div>
-                <label className="text-sm text-slate-700 font-medium">Email Address</label>
-                <div className="relative mt-1.5">
-                  <Mail className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
-                  <input
-                    type="email"
-                    placeholder="Enter your registered email address"
-                    className="w-full border border-slate-200 rounded-lg pl-9 pr-3 py-2.5 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500"
-                  />
-                </div>
-              </div>
+              <FormField
+                label="Email Address"
+                type="email"
+                placeholder="Enter your registered email address"
+                icon={Mail}
+              />
 
-              <button
-                type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg py-3 flex items-center justify-center gap-2 text-sm"
-              >
-                <Send className="w-4 h-4" />
+              <PrimaryButton type="submit" icon={<Send className="w-4 h-4" />}>
                 Send Reset Link
-              </button>
+              </PrimaryButton>
 
-              <div className="flex items-center gap-3 text-xs text-slate-400">
-                <div className="flex-1 h-px bg-slate-200" />
-                or
-                <div className="flex-1 h-px bg-slate-200" />
-              </div>
+              <Divider label="or" />
 
               <div className="flex items-start gap-3 bg-slate-50 rounded-lg p-3.5">
                 <Info className="w-4 h-4 text-blue-600 mt-0.5 shrink-0" />
@@ -99,21 +75,19 @@ export default function ForgotPasswordPage() {
         </div>
 
         {/* Need help */}
-        <section className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 border border-slate-100 rounded-2xl p-6">
-          <div className="flex items-center gap-3">
-            <Headphones className="w-5 h-5 text-blue-600" />
-            <div>
-              <div className="font-semibold text-slate-800 text-sm">Need Help?</div>
-              <div className="text-xs text-slate-500">
-                If you&apos;re having trouble accessing your account, our support team is here to help.
-              </div>
-            </div>
-          </div>
-          <button className="flex items-center gap-2 border border-slate-200 rounded-lg px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 shrink-0">
-            <Headphones className="w-4 h-4" />
-            Contact Support
-          </button>
-        </section>
+        <InfoBanner
+          iconVariant="plain"
+          className="mt-8 border border-slate-100 p-6"
+          icon={<Headphones className="w-5 h-5 text-blue-600" />}
+          title="Need Help?"
+          desc="If you're having trouble accessing your account, our support team is here to help."
+          action={
+            <button className="flex items-center gap-2 border border-slate-200 rounded-lg px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 shrink-0">
+              <Headphones className="w-4 h-4" />
+              Contact Support
+            </button>
+          }
+        />
 
         {/* Security */}
         <section className="mt-6 bg-blue-50 border border-blue-100 rounded-2xl px-6 sm:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-6">

@@ -2,6 +2,8 @@ import { Mail, CheckCircle2, Clock, RefreshCw, Pencil, HelpCircle, Send, ShieldC
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
+import PrimaryButton from "@/components/ui/PrimaryButton";
+import InfoBanner from "@/components/ui/InfoBanner";
 
 const helpItems = [
   { icon: Clock, title: "Check your spam folder", desc: "Sometimes our emails end up in spam/junk." },
@@ -67,10 +69,9 @@ export default function VerifyEmailPage() {
             ))}
           </div>
 
-          <button className="mt-8 w-full max-w-md bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg py-3 flex items-center justify-center gap-2 text-sm">
-            <Send className="w-4 h-4" />
+          <PrimaryButton type="button" className="mt-8 max-w-md" icon={<Send className="w-4 h-4" />}>
             Resend Verification Email
-          </button>
+          </PrimaryButton>
 
           <p className="text-xs text-slate-400 mt-4 max-w-md">
             The verification link will expire in 24 hours for security reasons.
@@ -101,21 +102,19 @@ export default function VerifyEmailPage() {
         </section>
 
         {/* Need help */}
-        <section className="mt-6 bg-emerald-50 border border-emerald-100 rounded-2xl px-6 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
-            <div className="w-11 h-11 rounded-full bg-emerald-600 flex items-center justify-center shrink-0">
-              <Headphones className="w-5 h-5 text-white" />
-            </div>
-            <div>
-              <div className="font-semibold text-slate-800 text-sm">Need Help?</div>
-              <div className="text-xs text-slate-500 mt-0.5">Our support team is here to help you with any issues.</div>
-            </div>
-          </div>
-          <button className="flex items-center gap-2 bg-white border border-emerald-200 text-emerald-700 font-medium rounded-lg px-4 py-2.5 text-sm hover:bg-emerald-100 shrink-0">
-            <Headphones className="w-4 h-4" />
-            Contact Support
-          </button>
-        </section>
+        <InfoBanner
+          className="mt-6 bg-emerald-50 border border-emerald-100 px-6 sm:px-8 py-5"
+          iconWrapClass="bg-emerald-600"
+          icon={<Headphones className="w-5 h-5 text-white" />}
+          title="Need Help?"
+          desc="Our support team is here to help you with any issues."
+          action={
+            <button className="flex items-center gap-2 bg-white border border-emerald-200 text-emerald-700 font-medium rounded-lg px-4 py-2.5 text-sm hover:bg-emerald-100 shrink-0">
+              <Headphones className="w-4 h-4" />
+              Contact Support
+            </button>
+          }
+        />
       </main>
 
       <Footer />
