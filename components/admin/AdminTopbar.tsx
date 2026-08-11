@@ -5,17 +5,19 @@ import { Search, Menu, Bell, MessageSquare, ChevronDown, ShieldCheck, Moon } fro
 export default function AdminTopbar({
   variant = "light",
   showThemeToggle = false,
+  sticky = true,
 }: {
   variant?: "light" | "dark";
   showThemeToggle?: boolean;
+  sticky?: boolean;
 }) {
   const dark = variant === "dark";
 
   return (
     <header
-      className={`h-[65px] flex items-center gap-4 px-5 border-b sticky top-0 z-20 ${
-        dark ? "bg-[#0a1a35] border-[#0a1a35]" : "bg-white border-slate-100"
-      }`}
+      className={`h-[65px] flex items-center gap-4 px-5 border-b ${
+        sticky ? "sticky top-0 z-20" : ""
+      } ${dark ? "bg-[#0a1a35] border-[#0a1a35]" : "bg-white border-slate-100"}`}
     >
       <button className={`p-1.5 rounded-md ${dark ? "text-white hover:bg-white/10" : "text-slate-500 hover:bg-slate-50"}`}>
         <Menu className="w-5 h-5" />
@@ -42,7 +44,7 @@ export default function AdminTopbar({
         </div>
       </div>
 
-      <div className="flex items-center gap-3 shrink-0">
+      <div className="flex items-center gap-3 shrink-0 ml-auto pr-1">
         {showThemeToggle && (
           <button className={`p-2 rounded-lg ${dark ? "text-white hover:bg-white/10" : "text-slate-500 hover:bg-slate-50"}`}>
             <Moon className="w-[18px] h-[18px]" />
