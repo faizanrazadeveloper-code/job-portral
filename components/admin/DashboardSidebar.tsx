@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  Flame,
   LayoutDashboard,
   Users,
   Building2,
@@ -113,15 +112,7 @@ export default function DashboardSidebar({
         }`}
       >
         <div className="flex items-center gap-2.5 px-5 h-16 border-b border-gray-200 shrink-0">
-          <div className="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center">
-            <Flame size={20} className="text-white" fill="white" />
-          </div>
-          <div className="leading-tight">
-            <p className="font-bold text-gray-900 text-sm tracking-wide">
-              ENERGY TAIL
-            </p>
-            <p className="text-[11px] text-gray-400">Oil, Gas &amp; Energy Jobs</p>
-          </div>
+          <img src="/logo.png" alt="Energy Tail" className="h-8 w-auto object-contain" />
         </div>
 
         <div className="flex-1 overflow-y-auto px-3 pt-4">

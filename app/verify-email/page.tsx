@@ -46,7 +46,7 @@ export default function VerifyEmailPage() {
                 <div className="text-sm font-semibold text-slate-800">john.anderson@example.com</div>
               </div>
             </div>
-            <a href="#" className="text-sm text-blue-600 font-medium hover:underline shrink-0">
+            <a href="/register" className="text-sm text-blue-600 font-medium hover:underline shrink-0">
               Change Email
             </a>
           </div>
@@ -77,7 +77,7 @@ export default function VerifyEmailPage() {
             The verification link will expire in 24 hours for security reasons.
             <br />
             If you&apos;re still having trouble,{" "}
-            <a href="#" className="text-blue-600 hover:underline">
+            <a href="/login" className="text-blue-600 hover:underline">
               contact our support team
             </a>
             .

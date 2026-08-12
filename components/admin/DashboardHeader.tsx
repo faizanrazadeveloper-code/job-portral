@@ -35,7 +35,7 @@ export default function DashboardHeader({ onMenuClick }: { onMenuClick: () => vo
       <div className="flex items-center gap-2 lg:gap-4 shrink-0">
         <button className="relative p-2 rounded-lg hover:bg-gray-100 text-gray-600">
           <Bell size={20} />
-          <span className="absolute -top-0.5 -right-0.5 bg-red-500 text-white text-[10px] font-semibold rounded-full w-4.5 h-4.5 min-w-[18px] h-[18px] flex items-center justify-center">
+          <span className="absolute -top-0.5 -right-0.5 bg-red-500 text-white text-[10px] font-semibold rounded-full min-w-[18px] h-[18px] px-1 flex items-center justify-center">
             12
           </span>
         </button>

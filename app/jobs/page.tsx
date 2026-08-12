@@ -120,10 +120,10 @@ export default function JobsPage() {
       <SiteHeader active="Jobs" />
 
       {/* Page hero */}
-      <section className="relative bg-[#0a1b3d] text-white overflow-hidden">
+      <section className="relative bg-[#0B2B26] text-white overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1b3d] via-[#0a1b3d]/85 to-[#0a1b3d]/50 z-10" />
-          <div className="w-full h-full bg-[linear-gradient(to_bottom,#0c2450,#081633)]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B2B26] via-[#0B2B26]/85 to-[#0B2B26]/50 z-10" />
+          <div className="w-full h-full bg-[linear-gradient(to_bottom,#123832,#081C18)]" />
         </div>
         <div className="relative z-20 mx-auto max-w-7xl px-6 pt-8 pb-24">
           <p className="text-xs text-slate-400 mb-4">
@@ -333,7 +333,7 @@ export default function JobsPage() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-1.5">
-                    <Link href="#" className="font-semibold text-slate-900 hover:text-blue-600">
+                    <Link href="/jobs" className="font-semibold text-slate-900 hover:text-blue-600">
                       {j.title}
                     </Link>
                     {j.verified && <BadgeCheck size={15} className="text-blue-500" />}
@@ -369,7 +369,7 @@ export default function JobsPage() {
                       <Bookmark size={15} />
                     </button>
                     <Link
-                      href="#"
+                      href="/employer-dashboard"
                       className="px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700"
                     >
                       View Details

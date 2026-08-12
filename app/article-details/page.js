@@ -92,7 +92,7 @@ export default function ArticleDetailsPage() {
             Articles
           </Link>
           <ChevronRight className="h-3.5 w-3.5" />
-          <a href="#" className="underline decoration-ink-300 underline-offset-2">
+          <a href="/articles" className="underline decoration-ink-300 underline-offset-2">
             Market Insights
           </a>
           <ChevronRight className="h-3.5 w-3.5" />
@@ -198,7 +198,7 @@ export default function ArticleDetailsPage() {
                   <p className="mt-1 text-[12px] text-ink-500">Market Analyst</p>
                 </div>
                 <a
-                  href="#"
+                  href="/articles"
                   className="ml-auto grid h-9 w-9 place-items-center rounded-lg border border-[#dfe6f1] text-brand-500 hover:bg-brand-50"
                 >
                   <Linkedin className="h-4 w-4" />

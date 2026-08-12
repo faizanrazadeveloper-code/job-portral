@@ -69,9 +69,9 @@ export default function UsersManagementPage() {
       <AdminSidebar active="users" />
 
       <div className="flex-1 min-w-0 flex flex-col">
-        <AdminTopbar variant="light" showThemeToggle />
+        <AdminTopbar variant="dark" showThemeToggle />
 
-        <main className="flex-1 p-6 space-y-6">
+        <main className="flex-1 p-4 sm:p-6 space-y-6">
           {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
@@ -119,7 +119,7 @@ export default function UsersManagementPage() {
 
           {/* Table + sidebar */}
           <div className="grid grid-cols-1 xl:grid-cols-[1fr_320px] gap-6 items-start">
-            <div className="bg-white rounded-2xl border border-slate-100 overflow-hidden">
+            <div className="min-w-0 bg-white rounded-2xl border border-slate-100 overflow-hidden">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 border-b border-slate-100">
                 <div className="flex items-center gap-3">
                   <select className="text-sm border border-slate-200 rounded-lg px-3 py-2 text-slate-600">

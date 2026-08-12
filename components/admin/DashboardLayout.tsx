@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import DashboardSidebar from "./DashboardSidebar";
-import DashboardHeader from "./DashboardHeader";
+import AdminTopbar from "./AdminTopbar";
 
 export default function DashboardLayout({
   children,
@@ -15,7 +15,7 @@ export default function DashboardLayout({
     <div className="h-screen bg-[#f5f6f8] lg:flex overflow-hidden">
       <DashboardSidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
       <div className="flex-1 min-w-0 flex flex-col">
-        <DashboardHeader onMenuClick={() => setSidebarOpen((v) => !v)} />
+        <AdminTopbar variant="dark" onMenuClick={() => setSidebarOpen(true)} />
         <main className="flex-1 px-4 py-6 lg:px-8 lg:py-8 overflow-y-auto">{children}</main>
         <Footer />
       </div>

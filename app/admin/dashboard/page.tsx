@@ -96,7 +96,7 @@ export default function AdminDashboardPage() {
       <div className="flex-1 min-w-0 flex flex-col">
         <AdminTopbar variant="dark" />
 
-        <main className="flex-1 p-6 space-y-6">
+        <main className="flex-1 p-4 sm:p-6 space-y-6">
           {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
@@ -159,7 +159,7 @@ export default function AdminDashboardPage() {
             <div className="bg-white rounded-2xl border border-slate-100 p-5">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="font-semibold text-slate-900">Recent Registrations</h2>
-                <a href="#" className="text-xs text-blue-600 font-medium">View All</a>
+                <a href="/admin/users" className="text-xs text-blue-600 font-medium">View All</a>
               </div>
               <div className="space-y-4">
                 {registrations.map((r) => (
@@ -186,7 +186,7 @@ export default function AdminDashboardPage() {
             <div className="bg-white rounded-2xl border border-slate-100 p-5">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="font-semibold text-slate-900">Top Job Categories</h2>
-                <a href="#" className="text-xs text-blue-600 font-medium">View All</a>
+                <a href="/admin/job-categories" className="text-xs text-blue-600 font-medium">View All</a>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-32 h-32 shrink-0 relative">
@@ -231,7 +231,7 @@ export default function AdminDashboardPage() {
             <div className="bg-white rounded-2xl border border-slate-100 p-5">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="font-semibold text-slate-900">Top Countries (Jobs)</h2>
-                <a href="#" className="text-xs text-blue-600 font-medium">View All</a>
+                <a href="/admin/countries" className="text-xs text-blue-600 font-medium">View All</a>
               </div>
               <div className="space-y-3.5">
                 {topCountries.map((c) => (
@@ -254,7 +254,7 @@ export default function AdminDashboardPage() {
             <div className="bg-white rounded-2xl border border-slate-100 p-5">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="font-semibold text-slate-900">Recent System Activities</h2>
-                <a href="#" className="text-xs text-blue-600 font-medium">View All</a>
+                <a href="/admin/audit-logs" className="text-xs text-blue-600 font-medium">View All</a>
               </div>
               <div className="space-y-4">
                 {recentActivities.map((a, i) => (

@@ -164,7 +164,7 @@ export default function AuthorDashboardPage() {
           <div className="bg-white border border-slate-200 rounded-xl p-5">
             <div className="flex items-center justify-between mb-4">
               <h3 className="font-semibold text-slate-900">Recent Articles</h3>
-              <Link href="#" className="text-xs font-semibold text-blue-600 flex items-center gap-1">
+              <Link href="/admin/articles" className="text-xs font-semibold text-blue-600 flex items-center gap-1">
                 View All Articles <ArrowRight size={12} />
               </Link>
             </div>
@@ -234,7 +234,7 @@ export default function AuthorDashboardPage() {
                 </span>
               </div>
               <Link
-                href="#"
+                href="/articles"
                 className="mt-4 inline-block text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg"
               >
                 View Article
@@ -245,7 +245,7 @@ export default function AuthorDashboardPage() {
             <div className="bg-white border border-slate-200 rounded-xl p-5">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="font-semibold text-slate-900">Drafts</h3>
-                <Link href="#" className="text-xs font-semibold text-blue-600 flex items-center gap-1">
+                <Link href="/admin/articles" className="text-xs font-semibold text-blue-600 flex items-center gap-1">
                   View All Drafts <ArrowRight size={12} />
                 </Link>
               </div>

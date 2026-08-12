@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import {
-  Flame,
   Menu,
   MessageSquare,
   Bell,
@@ -69,17 +68,7 @@ export default function DashboardShell({
           </button>
 
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <span className="grid place-items-center w-8 h-8 rounded-lg bg-blue-600 text-white">
-              <Flame size={16} />
-            </span>
-            <span className="hidden sm:block leading-tight">
-              <span className="block text-base font-extrabold tracking-tight text-slate-900">
-                ENERGY TAIL
-              </span>
-              <span className="block text-[9px] font-medium text-slate-400 -mt-0.5">
-                Oil, Gas &amp; Energy Jobs
-              </span>
-            </span>
+            <img src="/logo.png" alt="Energy Tail" className="h-9 w-auto object-contain" />
           </Link>
 
           <div className="hidden md:flex flex-1 max-w-xl items-center border border-slate-200 rounded-lg overflow-hidden ml-4">
@@ -138,17 +127,7 @@ export default function DashboardShell({
           }`}
         >
           <div className="hidden lg:flex items-center gap-2 px-6 py-5 border-b border-slate-100">
-            <span className="grid place-items-center w-8 h-8 rounded-lg bg-blue-600 text-white">
-              <Flame size={16} />
-            </span>
-            <span className="leading-tight">
-              <span className="block text-sm font-extrabold tracking-tight text-slate-900">
-                ENERGY TAIL
-              </span>
-              <span className="block text-[9px] font-medium text-slate-400">
-                Oil, Gas &amp; Energy Jobs
-              </span>
-            </span>
+            <img src="/logo.png" alt="Energy Tail" className="h-8 w-auto object-contain" />
           </div>
 
           <nav className="flex-1 overflow-y-auto px-3 py-4 space-y-6">
@@ -184,13 +163,13 @@ export default function DashboardShell({
 
           <div className="p-3 border-t border-slate-100 space-y-1">
             <Link
-              href="#"
+              href="/dashboard"
               className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-500 hover:bg-slate-50"
             >
               <Settings size={17} /> Settings
             </Link>
             <Link
-              href="#"
+              href="/login"
               className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-500 hover:bg-slate-50"
             >
               <LogOut size={17} /> Logout

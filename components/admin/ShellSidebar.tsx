@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Flame, Link2, Trash2, Activity, ChevronDown, X } from "lucide-react";
+import { Link2, Trash2, Activity, ChevronDown, X } from "lucide-react";
 import { navSections } from "@/lib/nav";
 
 function isActive(pathname: string, href: string) {
@@ -37,17 +37,7 @@ export default function ShellSidebar({
         {/* Logo */}
         <div className="flex items-center justify-between gap-2 border-b border-gray-100 px-5 py-5">
           <Link href="/admin/dashboard" className="flex items-center gap-2.5" onClick={onClose}>
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-600 text-white">
-              <Flame size={20} fill="white" strokeWidth={0} />
-            </span>
-            <span className="leading-tight">
-              <span className="block text-[15px] font-extrabold tracking-tight text-gray-900">
-                ENERGY TAIL
-              </span>
-              <span className="block text-[11px] text-gray-500">
-                Oil, Gas &amp; Energy Jobs
-              </span>
-            </span>
+            <img src="/logo.png" alt="Energy Tail" className="h-9 w-auto object-contain" />
           </Link>
           <button
             onClick={onClose}
@@ -118,7 +108,7 @@ export default function ShellSidebar({
           <ul className="space-y-0.5">
             <li>
               <a
-                href="#"
+                href="/"
                 className="flex items-center justify-between rounded-lg px-2 py-2 text-[13px] font-medium text-gray-700 hover:bg-gray-50"
               >
                 <span className="flex items-center gap-2.5">
@@ -129,7 +119,7 @@ export default function ShellSidebar({
             </li>
             <li>
               <a
-                href="#"
+                href="/admin/audit-logs"
                 className="flex items-center justify-between rounded-lg px-2 py-2 text-[13px] font-medium text-gray-700 hover:bg-gray-50"
               >
                 <span className="flex items-center gap-2.5">
@@ -140,7 +130,7 @@ export default function ShellSidebar({
             </li>
             <li>
               <a
-                href="#"
+                href="/admin/audit-logs"
                 className="flex items-center justify-between rounded-lg px-2 py-2 text-[13px] font-medium text-gray-700 hover:bg-gray-50"
               >
                 <span className="flex items-center gap-2.5">

@@ -26,6 +26,7 @@ import {
   MapPin,
   ClipboardCheck,
   DollarSign,
+  X,
 } from "lucide-react";
 
 // ---------------------------------------------------------------------------
@@ -161,25 +162,123 @@ const careerResources = [
 
 const sidebarNav = [
   { section: "JOB SEARCH", items: [
-    { label: "Browse Jobs", icon: FileSearch },
-    { label: "Applications", icon: FileText, badge: 8 },
-    { label: "Saved Jobs", icon: Bookmark, badge: 12 },
-    { label: "Job Alerts", icon: BellRing },
+    { label: "Browse Jobs", icon: FileSearch, href: "/jobs" },
+    { label: "Applications", icon: FileText, badge: 8, href: "/jobs" },
+    { label: "Saved Jobs", icon: Bookmark, badge: 12, href: "/jobs" },
+    { label: "Job Alerts", icon: BellRing, href: "/jobs" },
   ]},
   { section: "MY PROFILE", items: [
-    { label: "Profile", icon: UserIcon },
-    { label: "Resume / CV", icon: FileText },
-    { label: "Cover Letters", icon: FileEdit },
-    { label: "Skills", icon: Star },
+    { label: "Profile", icon: UserIcon, href: "/dashboard" },
+    { label: "Resume / CV", icon: FileText, href: "/dashboard" },
+    { label: "Cover Letters", icon: FileEdit, href: "/dashboard" },
+    { label: "Skills", icon: Star, href: "/dashboard" },
   ]},
   { section: "ACCOUNT", items: [
-    { label: "Settings", icon: Settings },
-    { label: "Logout", icon: LogOut },
+    { label: "Settings", icon: Settings, href: "/dashboard" },
+    { label: "Logout", icon: LogOut, href: "/login" },
   ]},
 ];
 
+function DashboardSidebar({ profileCompletion }: { profileCompletion: number }) {
+  return (
+    <>
+      <div className="flex items-center gap-2 px-6 py-6">
+        <img src="/logo.png" alt="Energy Tail" className="h-10 w-auto object-contain" />
+      </div>
+
+      <nav className="flex-1 overflow-y-auto px-3 pb-6">
+        <ul className="space-y-1">
+          <li>
+            <a
+              href="/dashboard"
+              className="flex items-center gap-3 rounded-lg bg-blue-50 px-3 py-2.5 text-sm font-medium text-blue-600"
+            >
+              <LayoutDashboard className="h-[18px] w-[18px]" />
+              Dashboard
+            </a>
+          </li>
+        </ul>
+
+        {sidebarNav.map((group) => (
+          <div key={group.section}>
+            <p className="px-3 pb-2 pt-6 text-xs font-semibold tracking-wider text-slate-400">
+              {group.section}
+            </p>
+            <ul className="space-y-1">
+              {group.items.map((item) => (
+                <li key={item.label}>
+                  <a
+                    href={item.href}
+                    className="flex items-center justify-between rounded-lg px-3 py-2.5 text-sm font-medium text-slate-600 hover:bg-slate-50"
+                  >
+                    <span className="flex items-center gap-3">
+                      <item.icon className="h-[18px] w-[18px]" />
+                      {item.label}
+                    </span>
+                    {"badge" in item && item.badge ? (
+                      <span className="flex h-5 min-w-[20px] items-center justify-center rounded-full bg-slate-100 px-1.5 text-xs font-semibold text-slate-500">
+                        {item.badge}
+                      </span>
+                    ) : null}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </nav>
+
+      <div className="border-t border-slate-200 p-4">
+        <div className="rounded-xl bg-blue-50 p-4">
+          <p className="mb-1 text-sm font-semibold text-blue-700">
+            Looking for the right job?
+          </p>
+          <p className="mb-3 text-xs text-blue-500">
+            Complete your profile and get better job matches.
+          </p>
+          <div className="mb-3 flex items-center gap-3">
+            <div className="relative h-11 w-11 shrink-0">
+              <svg viewBox="0 0 36 36" className="h-11 w-11 -rotate-90">
+                <circle
+                  cx="18"
+                  cy="18"
+                  r="16"
+                  fill="none"
+                  stroke="#dbeafe"
+                  strokeWidth="4"
+                />
+                <circle
+                  cx="18"
+                  cy="18"
+                  r="16"
+                  fill="none"
+                  stroke="#2563eb"
+                  strokeWidth="4"
+                  strokeDasharray={`${2 * Math.PI * 16}`}
+                  strokeDashoffset={`${
+                    2 * Math.PI * 16 * (1 - profileCompletion / 100)
+                  }`}
+                  strokeLinecap="round"
+                />
+              </svg>
+              <span className="absolute inset-0 flex items-center justify-center text-[10px] font-bold text-blue-700">
+                {profileCompletion}%
+              </span>
+            </div>
+          </div>
+          <button className="flex w-full items-center justify-center gap-1.5 rounded-lg bg-blue-600 py-2 text-sm font-semibold text-white hover:bg-blue-700">
+            Complete Profile
+            <ArrowRight className="h-4 w-4" />
+          </button>
+        </div>
+      </div>
+    </>
+  );
+}
+
 export default function JobSeekerDashboardPage() {
   const [profileCompletion] = useState(75);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
@@ -188,109 +287,28 @@ export default function JobSeekerDashboardPage() {
         {/* Sidebar                                                       */}
         {/* ------------------------------------------------------------- */}
         <aside className="hidden w-64 shrink-0 flex-col border-r border-slate-200 bg-white lg:flex">
-          <div className="flex items-center gap-2 px-6 py-6">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-600">
-              <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5 text-white">
-                <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" fill="currentColor" />
-              </svg>
-            </div>
-            <div>
-              <p className="text-lg font-extrabold leading-none tracking-tight text-slate-900">
-                ENERGY TAIL
-              </p>
-              <p className="text-[11px] leading-none text-slate-400 mt-1">
-                Oil, Gas &amp; Energy Jobs
-              </p>
-            </div>
-          </div>
-
-          <nav className="flex-1 overflow-y-auto px-3 pb-6">
-            <ul className="space-y-1">
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center gap-3 rounded-lg bg-blue-50 px-3 py-2.5 text-sm font-medium text-blue-600"
-                >
-                  <LayoutDashboard className="h-[18px] w-[18px]" />
-                  Dashboard
-                </a>
-              </li>
-            </ul>
-
-            {sidebarNav.map((group) => (
-              <div key={group.section}>
-                <p className="px-3 pb-2 pt-6 text-xs font-semibold tracking-wider text-slate-400">
-                  {group.section}
-                </p>
-                <ul className="space-y-1">
-                  {group.items.map((item) => (
-                    <li key={item.label}>
-                      <a
-                        href="#"
-                        className="flex items-center justify-between rounded-lg px-3 py-2.5 text-sm font-medium text-slate-600 hover:bg-slate-50"
-                      >
-                        <span className="flex items-center gap-3">
-                          <item.icon className="h-[18px] w-[18px]" />
-                          {item.label}
-                        </span>
-                        {"badge" in item && item.badge ? (
-                          <span className="flex h-5 min-w-[20px] items-center justify-center rounded-full bg-slate-100 px-1.5 text-xs font-semibold text-slate-500">
-                            {item.badge}
-                          </span>
-                        ) : null}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </nav>
-
-          <div className="border-t border-slate-200 p-4">
-            <div className="rounded-xl bg-blue-50 p-4">
-              <p className="mb-1 text-sm font-semibold text-blue-700">
-                Looking for the right job?
-              </p>
-              <p className="mb-3 text-xs text-blue-500">
-                Complete your profile and get better job matches.
-              </p>
-              <div className="mb-3 flex items-center gap-3">
-                <div className="relative h-11 w-11 shrink-0">
-                  <svg viewBox="0 0 36 36" className="h-11 w-11 -rotate-90">
-                    <circle
-                      cx="18"
-                      cy="18"
-                      r="16"
-                      fill="none"
-                      stroke="#dbeafe"
-                      strokeWidth="4"
-                    />
-                    <circle
-                      cx="18"
-                      cy="18"
-                      r="16"
-                      fill="none"
-                      stroke="#2563eb"
-                      strokeWidth="4"
-                      strokeDasharray={`${2 * Math.PI * 16}`}
-                      strokeDashoffset={`${
-                        2 * Math.PI * 16 * (1 - profileCompletion / 100)
-                      }`}
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                  <span className="absolute inset-0 flex items-center justify-center text-[10px] font-bold text-blue-700">
-                    {profileCompletion}%
-                  </span>
-                </div>
-              </div>
-              <button className="flex w-full items-center justify-center gap-1.5 rounded-lg bg-blue-600 py-2 text-sm font-semibold text-white hover:bg-blue-700">
-                Complete Profile
-                <ArrowRight className="h-4 w-4" />
-              </button>
-            </div>
-          </div>
+          <DashboardSidebar profileCompletion={profileCompletion} />
         </aside>
+
+        {sidebarOpen && (
+          <div className="fixed inset-0 z-50 lg:hidden">
+            <div
+              className="absolute inset-0 bg-black/40"
+              onClick={() => setSidebarOpen(false)}
+              aria-hidden
+            />
+            <aside className="absolute inset-y-0 left-0 flex w-[280px] max-w-[85vw] flex-col border-r border-slate-200 bg-white shadow-xl">
+              <button
+                onClick={() => setSidebarOpen(false)}
+                className="absolute right-3 top-5 z-10 rounded-lg p-1.5 text-slate-500 hover:bg-slate-100"
+                aria-label="Close menu"
+              >
+                <X className="h-5 w-5" />
+              </button>
+              <DashboardSidebar profileCompletion={profileCompletion} />
+            </aside>
+          </div>
+        )}
 
         {/* ------------------------------------------------------------- */}
         {/* Main column                                                   */}
@@ -298,7 +316,11 @@ export default function JobSeekerDashboardPage() {
         <div className="flex min-h-screen flex-1 flex-col">
           {/* Top bar */}
           <header className="flex items-center gap-4 border-b border-slate-200 bg-white px-4 py-3 lg:px-8">
-            <button className="rounded-lg p-2 text-slate-500 hover:bg-slate-100 lg:hidden">
+            <button
+              onClick={() => setSidebarOpen(true)}
+              className="rounded-lg p-2 text-slate-500 hover:bg-slate-100 lg:hidden"
+              aria-label="Open menu"
+            >
               <Menu className="h-5 w-5" />
             </button>
 

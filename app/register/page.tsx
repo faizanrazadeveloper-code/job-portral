@@ -166,11 +166,11 @@ export default function RegisterPage() {
                 <input type="checkbox" className="mt-0.5 rounded border-slate-300 text-blue-600 focus:ring-blue-500" />
                 <span>
                   I agree to the{" "}
-                  <a href="#" className="text-blue-600 hover:underline">
+                  <a href="/register" className="text-blue-600 hover:underline">
                     Terms of Use
                   </a>{" "}
                   and{" "}
-                  <a href="#" className="text-blue-600 hover:underline">
+                  <a href="/register" className="text-blue-600 hover:underline">
                     Privacy Policy
                   </a>{" "}
                   <span className="text-red-500">*</span>

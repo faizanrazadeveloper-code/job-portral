@@ -233,10 +233,10 @@ export default function ArticleReviewApprovalPage() {
       <AdminSidebar active="articles" sticky={false} />
 
       <div className="flex-1 min-w-0 flex flex-col">
-        <AdminTopbar variant="light" sticky={false} />
+        <AdminTopbar variant="dark" sticky={false} />
 
         {/* Content */}
-        <main className="flex-1 p-6 space-y-6">
+        <main className="flex-1 p-4 sm:p-6 space-y-6">
           <div>
             <h1 className="text-2xl font-bold text-slate-900">
               Article Review / Approval

@@ -1,38 +1,56 @@
 import Link from "next/link";
-import { Flame } from "lucide-react";
 import { Linkedin, Facebook, Twitter, Instagram, Youtube } from "@/components/Shared";
 
 const columns = [
   {
     title: "For Job Seekers",
-    links: ["Browse Jobs", "Create Profile", "Saved Jobs", "Job Alerts", "Career Advice"],
+    links: [
+      { label: "Browse Jobs", href: "/jobs" },
+      { label: "Create Profile", href: "/register" },
+      { label: "Saved Jobs", href: "/jobs" },
+      { label: "Job Alerts", href: "/jobs" },
+      { label: "Career Advice", href: "/articles" },
+    ],
   },
   {
     title: "For Employers",
-    links: ["Post a Job", "Packages & Pricing", "Employer Dashboard", "Company Profile", "Search Resumes"],
+    links: [
+      { label: "Post a Job", href: "/employer-dashboard" },
+      { label: "Packages & Pricing", href: "/register" },
+      { label: "Employer Dashboard", href: "/employer-dashboard" },
+      { label: "Company Profile", href: "/employer/company-profile" },
+      { label: "Search Resumes", href: "/jobs" },
+    ],
   },
   {
     title: "Resources",
-    links: ["Articles", "Industry News", "Salary Guide", "Companies", "Categories"],
+    links: [
+      { label: "Articles", href: "/articles" },
+      { label: "Industry News", href: "/articles" },
+      { label: "Salary Guide", href: "/jobs" },
+      { label: "Companies", href: "/companies" },
+      { label: "Categories", href: "/admin/job-categories" },
+    ],
   },
   {
     title: "Company",
-    links: ["About Us", "Contact Us", "Terms of Use", "Privacy Policy", "Sitemap"],
+    links: [
+      { label: "About Us", href: "/" },
+      { label: "Contact Us", href: "/login" },
+      { label: "Terms of Use", href: "/register" },
+      { label: "Privacy Policy", href: "/register" },
+      { label: "Sitemap", href: "/" },
+    ],
   },
 ];
 
 export default function SiteFooter() {
   return (
-    <footer className="bg-[#0a1b3d] text-slate-300">
+    <footer className="bg-[#0B2B26] text-slate-300">
       <div className="mx-auto max-w-7xl px-6 py-14 grid grid-cols-2 md:grid-cols-6 gap-10">
         <div className="col-span-2">
           <Link href="/" className="flex items-center gap-2">
-            <span className="grid place-items-center w-8 h-8 rounded-lg bg-blue-600 text-white">
-              <Flame size={16} />
-            </span>
-            <span className="text-base font-extrabold text-white">
-              ENERGY <span className="text-blue-400">TAIL</span>
-            </span>
+            <img src="/logo.png" alt="Energy Tail" className="h-10 w-auto object-contain" />
           </Link>
           <p className="text-xs text-slate-400 mt-2">Oil, Gas &amp; Energy Jobs</p>
           <p className="text-sm text-slate-400 mt-4 leading-relaxed">
@@ -54,9 +72,9 @@ export default function SiteFooter() {
             <h4 className="text-white text-sm font-semibold mb-4">{col.title}</h4>
             <ul className="space-y-2.5">
               {col.links.map((l) => (
-                <li key={l}>
-                  <Link href="#" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
-                    {l}
+                <li key={l.label}>
+                  <Link href={l.href} className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                    {l.label}
                   </Link>
                 </li>
               ))}

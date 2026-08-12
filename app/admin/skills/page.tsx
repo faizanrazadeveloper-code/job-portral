@@ -28,9 +28,9 @@ export default function SkillsPage() {
       <AdminSidebar active="skills" />
 
       <div className="flex-1 min-w-0 flex flex-col">
-        <AdminTopbar variant="light" />
+        <AdminTopbar variant="dark" />
 
-        <main className="flex-1 p-6 space-y-6">
+        <main className="flex-1 p-4 sm:p-6 space-y-6">
           <AdminPageHeader crumbs={["Dashboard", "Skills"]} title="Skills" addLabel="Add New Skill" />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -42,7 +42,7 @@ export default function SkillsPage() {
           </div>
 
           <div className="grid grid-cols-1 xl:grid-cols-[1fr_320px] gap-6 items-start">
-            <div className="bg-white rounded-2xl border border-slate-100 overflow-hidden">
+            <div className="min-w-0 bg-white rounded-2xl border border-slate-100 overflow-hidden">
               <AdminToolbar searchPlaceholder="Search skills..." />
               <div className="overflow-x-auto">
                 <table className="w-full text-left">

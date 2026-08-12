@@ -70,10 +70,10 @@ const activeJobs = [
 ];
 
 const quickActions = [
-  { icon: PlusCircle, title: "Post a New Job", body: "Reach the right candidates" },
-  { icon: Briefcase, title: "Manage Jobs", body: "Edit, pause or close jobs" },
-  { icon: Users, title: "Browse Candidates", body: "Search and view candidates" },
-  { icon: CreditCard, title: "Subscription & Billing", body: "Manage your plan and payments" },
+  { icon: PlusCircle, title: "Post a New Job", body: "Reach the right candidates", href: "/admin/job-details" },
+  { icon: Briefcase, title: "Manage Jobs", body: "Edit, pause or close jobs", href: "/admin/jobs" },
+  { icon: Users, title: "Browse Candidates", body: "Search and view candidates", href: "/jobs" },
+  { icon: CreditCard, title: "Subscription & Billing", body: "Manage your plan and payments", href: "/admin/settings" },
 ];
 
 const activity = [
@@ -115,7 +115,7 @@ export default function EmployerDashboardPage() {
           <p className="text-sm text-slate-500 mt-1">Here&apos;s what&apos;s happening with your company today.</p>
         </div>
         <Link
-          href="#"
+          href="/admin/job-details"
           className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg shrink-0"
         >
           <Plus size={16} /> Post a New Job
@@ -237,7 +237,7 @@ export default function EmployerDashboardPage() {
                 ))}
               </div>
               <Link
-                href="#"
+                href="/admin/jobs"
                 className="mt-4 flex items-center justify-center gap-1 text-xs font-semibold text-blue-600"
               >
                 View all applications <ArrowRight size={12} />
@@ -249,7 +249,7 @@ export default function EmployerDashboardPage() {
           <div className="bg-white border border-slate-200 rounded-xl p-5">
             <div className="flex items-center justify-between mb-4">
               <h3 className="font-semibold text-slate-900">Your Active Jobs</h3>
-              <Link href="#" className="text-xs font-semibold text-blue-600 flex items-center gap-1">
+              <Link href="/admin/jobs" className="text-xs font-semibold text-blue-600 flex items-center gap-1">
                 View All Jobs <ArrowRight size={12} />
               </Link>
             </div>
@@ -309,7 +309,7 @@ export default function EmployerDashboardPage() {
               {quickActions.map((a) => (
                 <Link
                   key={a.title}
-                  href="#"
+                  href={a.href}
                   className="flex items-center gap-3 p-2.5 rounded-lg hover:bg-slate-50 transition-colors"
                 >
                   <span className="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 grid place-items-center shrink-0">
@@ -328,7 +328,7 @@ export default function EmployerDashboardPage() {
           <div className="bg-white border border-slate-200 rounded-xl p-5">
             <div className="flex items-center justify-between mb-4">
               <h3 className="font-semibold text-slate-900">Recent Activity</h3>
-              <Link href="#" className="text-xs font-semibold text-blue-600">
+              <Link href="/admin/audit-logs" className="text-xs font-semibold text-blue-600">
                 View All
               </Link>
             </div>
@@ -362,7 +362,7 @@ export default function EmployerDashboardPage() {
               </span>
             </div>
             <p className="text-xs text-slate-400 mb-4">Expires on: June 15, 2025</p>
-            <Link href="#" className="text-xs font-semibold text-blue-600 flex items-center gap-1">
+            <Link href="/admin/settings" className="text-xs font-semibold text-blue-600 flex items-center gap-1">
               Manage Subscription <ArrowRight size={12} />
             </Link>
           </div>

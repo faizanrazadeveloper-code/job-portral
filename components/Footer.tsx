@@ -4,28 +4,52 @@ import { LinkedinIcon as Linkedin, FacebookIcon as Facebook, InstagramIcon as In
 const columns = [
   {
     title: "For Job Seekers",
-    links: ["Browse Jobs", "Create Profile", "Saved Jobs", "Job Alerts", "Career Advice"],
+    links: [
+      { label: "Browse Jobs", href: "/jobs" },
+      { label: "Create Profile", href: "/register" },
+      { label: "Saved Jobs", href: "/jobs" },
+      { label: "Job Alerts", href: "/jobs" },
+      { label: "Career Advice", href: "/articles" },
+    ],
   },
   {
     title: "For Employers",
-    links: ["Post a Job", "Packages & Pricing", "Employer Dashboard", "Company Profile", "Search Resumes"],
+    links: [
+      { label: "Post a Job", href: "/employer-dashboard" },
+      { label: "Packages & Pricing", href: "/register" },
+      { label: "Employer Dashboard", href: "/employer-dashboard" },
+      { label: "Company Profile", href: "/employer/company-profile" },
+      { label: "Search Resumes", href: "/jobs" },
+    ],
   },
   {
     title: "Resources",
-    links: ["Articles", "Industry News", "Salary Guide", "Companies", "Categories"],
+    links: [
+      { label: "Articles", href: "/articles" },
+      { label: "Industry News", href: "/articles" },
+      { label: "Salary Guide", href: "/jobs" },
+      { label: "Companies", href: "/companies" },
+      { label: "Categories", href: "/admin/job-categories" },
+    ],
   },
   {
     title: "Company",
-    links: ["About Us", "Contact Us", "Terms of Use", "Privacy Policy", "Sitemap"],
+    links: [
+      { label: "About Us", href: "/" },
+      { label: "Contact Us", href: "/login" },
+      { label: "Terms of Use", href: "/register" },
+      { label: "Privacy Policy", href: "/register" },
+      { label: "Sitemap", href: "/" },
+    ],
   },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0a1a35] text-slate-300 mt-auto">
+    <footer className="bg-[#0B2B26] text-slate-300 mt-auto">
       <div className="mx-auto max-w-7xl px-4 py-12 grid grid-cols-1 md:grid-cols-5 gap-10">
         <div className="md:col-span-1 space-y-4">
-          <Logo light />
+          <Logo />
           <p className="text-sm text-slate-400 leading-relaxed">
             Connecting energy professionals with top employers worldwide.
           </p>
@@ -42,9 +66,9 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4 text-sm">{col.title}</h4>
             <ul className="space-y-2.5 text-sm">
               {col.links.map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-slate-400 hover:text-white">
-                    {link}
+                <li key={link.label}>
+                  <a href={link.href} className="text-slate-400 hover:text-white">
+                    {link.label}
                   </a>
                 </li>
               ))}

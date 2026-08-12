@@ -693,3 +693,2060 @@ Error: Cannot apply unknown utility class `placeholder:`
     [2m[at async _n (C:\All Folder\Oracles force\job-portral\node_modules\tailwindcss\dist\lib.js:38:631)][0m
     [2m[at async an (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\node\dist\index.js:10:3415)][0m
     [2m[at async E (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:3996)][0m
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: C:\All Folder\Oracles force\job-portral\app\globals.css:12:9: Unknown word HEAD
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unknownWord (turbopack:///[project]/node_modules/postcss/lib/parser.js:602:22)]
+    [at Parser.decl (turbopack:///[project]/node_modules/postcss/lib/parser.js:242:14)]
+    [at Parser.other (turbopack:///[project]/node_modules/postcss/lib/parser.js:408:18)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:479:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:171:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: C:\All Folder\Oracles force\job-portral\app\globals.css:12:9: Unknown word HEAD
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unknownWord (turbopack:///[project]/node_modules/postcss/lib/parser.js:602:22)]
+    [at Parser.decl (turbopack:///[project]/node_modules/postcss/lib/parser.js:242:14)]
+    [at Parser.other (turbopack:///[project]/node_modules/postcss/lib/parser.js:408:18)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:479:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:171:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: C:\All Folder\Oracles force\job-portral\app\globals.css:12:9: Unknown word HEAD
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unknownWord (turbopack:///[project]/node_modules/postcss/lib/parser.js:602:22)]
+    [at Parser.decl (turbopack:///[project]/node_modules/postcss/lib/parser.js:242:14)]
+    [at Parser.other (turbopack:///[project]/node_modules/postcss/lib/parser.js:408:18)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:479:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:171:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+⨯ ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+ GET /login 500 in 373ms (next.js: 307ms, application-code: 66ms)
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] Uncaught Error: ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+⨯ ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+ GET /login 500 in 64ms (next.js: 30ms, application-code: 34ms)
+[browser] Uncaught Error: ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `placeholder:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+Error: Cannot apply unknown utility class `hover:`
+    [2m[at onInvalidCandidate (C:\All Folder\Oracles force\job-portral\node_modules\tailwindcss\dist\lib.js:21:1879)][0m
+    [2m[at Oe (C:\All Folder\Oracles force\job-portral\node_modules\tailwindcss\dist\lib.js:16:39470)][0m
+    [2m[at C:\All Folder\Oracles force\job-portral\node_modules\tailwindcss\dist\lib.js:21:711][0m
+    [2m[at ai (C:\All Folder\Oracles force\job-portral\node_modules\tailwindcss\dist\lib.js:5:1775)][0m
+    [2m[at O (C:\All Folder\Oracles force\job-portral\node_modules\tailwindcss\dist\lib.js:5:1377)][0m
+    [2m[at Pe (C:\All Folder\Oracles force\job-portral\node_modules\tailwindcss\dist\lib.js:21:172)][0m
+    [2m[at On (C:\All Folder\Oracles force\job-portral\node_modules\tailwindcss\dist\lib.js:38:294)][0m
+    [2m[at async _n (C:\All Folder\Oracles force\job-portral\node_modules\tailwindcss\dist\lib.js:38:631)][0m
+    [2m[at async an (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\node\dist\index.js:10:3415)][0m
+    [2m[at async E (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:3996)][0m
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+⨯ ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+ GET / 500 in 81ms (next.js: 49ms, application-code: 32ms)
+[browser] Uncaught Error: ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+[browser] ./app/globals.css
+Error: Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\All Folder\Oracles force\job-portral\app\globals.css:1:1: Cannot apply unknown utility class `hover:`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]
+    [at Object.Once (C:\All Folder\Oracles force\job-portral\node_modules\@tailwindcss\postcss\dist\index.js:10:7013)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]
+    [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component] 
+ GET / 200 in 441ms (next.js: 35ms, application-code: 405ms)
+ GET / 200 in 217ms (next.js: 12ms, application-code: 204ms)
+ GET / 200 in 176ms (next.js: 13ms, application-code: 163ms)
+ GET / 200 in 285ms (next.js: 12ms, application-code: 273ms)
+ GET / 200 in 314ms (next.js: 15ms, application-code: 299ms)
+ GET / 200 in 205ms (next.js: 7ms, application-code: 198ms)
+ GET / 200 in 177ms (next.js: 7ms, application-code: 170ms)
+ GET / 200 in 182ms (next.js: 9ms, application-code: 174ms)
+ GET / 200 in 270ms (next.js: 43ms, application-code: 226ms)
+ GET / 200 in 684ms (next.js: 30ms, application-code: 654ms)
+✓ Compiled in 625ms
+ GET / 200 in 722ms (next.js: 48ms, application-code: 674ms)
+✓ Compiled in 588ms
+ GET / 200 in 500ms (next.js: 42ms, application-code: 458ms)
+✓ Compiled in 483ms
+ GET / 200 in 404ms (next.js: 53ms, application-code: 351ms)
+✓ Compiled in 652ms
+ GET / 200 in 840ms (next.js: 67ms, application-code: 773ms)
+✓ Compiled in 352ms
+ GET / 200 in 474ms (next.js: 57ms, application-code: 417ms)
+✓ Compiled in 1134ms
+ GET / 200 in 1613ms (next.js: 192ms, application-code: 1421ms)
+✓ Compiled in 2.6s
+ GET / 200 in 3.1s (next.js: 334ms, application-code: 2.8s)
+✓ Compiled in 1167ms
+ GET / 200 in 1121ms (next.js: 116ms, application-code: 1005ms)
+✓ Compiled in 1061ms
+ GET / 200 in 1029ms (next.js: 131ms, application-code: 898ms)
+ GET / 200 in 334ms (next.js: 12ms, application-code: 321ms)
+ GET / 200 in 323ms (next.js: 7ms, application-code: 316ms)
+ GET / 200 in 336ms (next.js: 10ms, application-code: 327ms)
+ GET / 200 in 380ms (next.js: 12ms, application-code: 368ms)
+ GET / 200 in 342ms (next.js: 11ms, application-code: 331ms)
+ GET / 200 in 427ms (next.js: 17ms, application-code: 410ms)
+ GET /login 200 in 132ms (next.js: 25ms, application-code: 107ms)
+ GET / 200 in 160ms (next.js: 4ms, application-code: 155ms)
+ GET / 200 in 256ms (next.js: 8ms, application-code: 248ms)
+ GET / 200 in 231ms (next.js: 11ms, application-code: 220ms)
+ GET / 200 in 430ms (next.js: 21ms, application-code: 408ms)
+ GET / 200 in 363ms (next.js: 12ms, application-code: 351ms)
+ GET /companies 200 in 1250ms (next.js: 1183ms, application-code: 67ms)
+ GET /admin/job-categories 200 in 1551ms (next.js: 1266ms, application-code: 285ms)
+ GET /admin/companies 200 in 1387ms (next.js: 1330ms, application-code: 57ms)
+ GET /admin/companies 200 in 864ms (next.js: 44ms, application-code: 820ms)
+ GET /admin/companies 200 in 412ms (next.js: 15ms, application-code: 397ms)
+ GET /admin/companies 200 in 559ms (next.js: 15ms, application-code: 544ms)
+ GET /admin/dashboard 200 in 132ms (next.js: 52ms, application-code: 80ms)
+ GET /admin/dashboard 200 in 121ms (next.js: 17ms, application-code: 105ms)
+ GET /admin/dashboard 200 in 157ms (next.js: 19ms, application-code: 138ms)
+ GET /admin/dashboard 200 in 99ms (next.js: 12ms, application-code: 87ms)
+ GET /admin/dashboard 200 in 219ms (next.js: 112ms, application-code: 107ms)
+✓ Compiled in 3.3s
+ GET /admin/dashboard 200 in 135ms (next.js: 27ms, application-code: 108ms)
+ GET /admin/dashboard 200 in 140ms (next.js: 37ms, application-code: 103ms)
+ GET /admin/dashboard 200 in 160ms (next.js: 34ms, application-code: 127ms)
+ GET /admin/dashboard 200 in 127ms (next.js: 37ms, application-code: 90ms)
+ GET /admin/dashboard 200 in 149ms (next.js: 81ms, application-code: 68ms)
+ GET /admin/dashboard 200 in 119ms (next.js: 31ms, application-code: 87ms)
+✓ Compiled in 1172ms
+ GET /admin/dashboard 200 in 285ms (next.js: 17ms, application-code: 268ms)
+✓ Compiled in 1586ms
+ GET /admin/dashboard 200 in 203ms (next.js: 35ms, application-code: 168ms)
+✓ Compiled in 1087ms
+ GET /admin/dashboard 200 in 411ms (next.js: 41ms, application-code: 370ms)
+✓ Compiled in 344ms
+ GET /admin/dashboard 200 in 109ms (next.js: 10ms, application-code: 99ms)
+ GET /admin/dashboard 200 in 204ms (next.js: 68ms, application-code: 136ms)
+[browser] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(0) and height(0) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET /admin/dashboard 200 in 382ms (next.js: 8ms, application-code: 374ms)
+ GET /admin/companies 200 in 42ms (next.js: 16ms, application-code: 27ms)
+ GET /admin/job-categories 200 in 160ms (next.js: 25ms, application-code: 135ms)
+ GET /admin/companies 200 in 41ms (next.js: 9ms, application-code: 32ms)
+ GET /admin/jobs 200 in 1357ms (next.js: 1248ms, application-code: 109ms)
+ GET /admin/articles 200 in 1612ms (next.js: 1538ms, application-code: 74ms)
+✓ Compiled in 840ms
+ GET /admin/dashboard 200 in 139ms (next.js: 16ms, application-code: 124ms)
+ GET /admin/articles 200 in 139ms (next.js: 20ms, application-code: 119ms)
+ GET /admin/articles 200 in 1450ms (next.js: 1246ms, application-code: 204ms)
+ GET /admin/articles 200 in 1534ms (next.js: 37ms, application-code: 1497ms)
+ GET /admin/articles 200 in 580ms (next.js: 15ms, application-code: 565ms)
+ GET /admin/articles 200 in 118ms (next.js: 11ms, application-code: 106ms)
+ GET /admin/articles 200 in 123ms (next.js: 18ms, application-code: 105ms)
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/art..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{rsc:{...}, ...}}>
+                    <__next_viewport_boundary__>
+                    <MetadataWrapper>
++                     <div hidden={true}>
+-                     {"\n        "}
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+[browser] Uncaught TypeError: Cannot read properties of null (reading 'removeChild')
+[browser] Uncaught TypeError: Cannot read properties of null (reading 'removeChild')
+ GET /admin/articles 200 in 130ms (next.js: 31ms, application-code: 99ms)
+[browser] Uncaught TypeError: Cannot read properties of null (reading 'removeChild')
+ GET /admin/articles 200 in 175ms (next.js: 9ms, application-code: 166ms)
+ GET /admin/articles 200 in 316ms (next.js: 6ms, application-code: 310ms)
+ GET /admin/industries 200 in 1385ms (next.js: 1116ms, application-code: 269ms)
+ GET /admin/users 200 in 83ms (next.js: 37ms, application-code: 46ms)
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/art..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{rsc:{...}, ...}}>
+                    <__next_viewport_boundary__>
+                    <MetadataWrapper>
++                     <div hidden={true}>
+-                     {"\n        "}
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+ GET /admin/articles 200 in 199ms (next.js: 19ms, application-code: 180ms)
+ GET /admin/articles 200 in 475ms (next.js: 12ms, application-code: 463ms)
+ GET /admin/articles 200 in 292ms (next.js: 10ms, application-code: 282ms)
+ GET /admin/dashboard 200 in 49ms (next.js: 12ms, application-code: 38ms)
+ GET /admin/tags 200 in 1587ms (next.js: 1310ms, application-code: 277ms)
+✓ Compiled in 1258ms
+ GET /admin/tags 200 in 267ms (next.js: 11ms, application-code: 256ms)
+ GET /admin/tags 200 in 1834ms (next.js: 48ms, application-code: 1786ms)
+ GET /admin/tags 200 in 446ms (next.js: 9ms, application-code: 436ms)
+ GET /admin/jobs 200 in 65ms (next.js: 21ms, application-code: 43ms)
+ GET /login 200 in 467ms (next.js: 68ms, application-code: 399ms)
+ GET /login 200 in 163ms (next.js: 8ms, application-code: 155ms)
+ GET /login 200 in 177ms (next.js: 7ms, application-code: 170ms)
+ GET /companies 200 in 82ms (next.js: 21ms, application-code: 61ms)
+ GET /jobs 200 in 1276ms (next.js: 1018ms, application-code: 258ms)
+ GET /employer-dashboard 200 in 1396ms (next.js: 1338ms, application-code: 57ms)
+ GET /employer-dashboard 200 in 222ms (next.js: 19ms, application-code: 203ms)
+ GET /employer-dashboard 200 in 86ms (next.js: 7ms, application-code: 79ms)
+ GET /employer-dashboard 200 in 19ms (next.js: 8ms, application-code: 11ms)
+ GET /employer-dashboard 200 in 91ms (next.js: 7ms, application-code: 83ms)
+ GET / 200 in 539ms (next.js: 91ms, application-code: 448ms)
+ GET /login 200 in 94ms (next.js: 8ms, application-code: 87ms)
+ GET / 200 in 308ms (next.js: 11ms, application-code: 296ms)
+ GET /admin/articles 200 in 230ms (next.js: 28ms, application-code: 202ms)
+ GET /admin/articles 200 in 93ms (next.js: 9ms, application-code: 84ms)
+ GET /admin/articles 200 in 155ms (next.js: 29ms, application-code: 126ms)
+ GET /admin/dashboard 200 in 93ms (next.js: 28ms, application-code: 65ms)
+ GET /admin/companies 200 in 80ms (next.js: 25ms, application-code: 55ms)
+ GET /admin/users 200 in 153ms (next.js: 31ms, application-code: 123ms)
+ GET /admin/dashboard 200 in 83ms (next.js: 9ms, application-code: 74ms)
+ GET /admin/users 200 in 41ms (next.js: 6ms, application-code: 36ms)
+ GET /admin/companies 200 in 61ms (next.js: 12ms, application-code: 49ms)
+ GET /admin/articles 200 in 43ms (next.js: 9ms, application-code: 34ms)
+ GET /admin/jobs 200 in 54ms (next.js: 9ms, application-code: 45ms)
+ GET /admin/users 200 in 43ms (next.js: 10ms, application-code: 34ms)
+ GET /admin/dashboard 200 in 64ms (next.js: 10ms, application-code: 54ms)
+ GET /admin/companies 200 in 44ms (next.js: 7ms, application-code: 37ms)
+ GET /admin/companies 200 in 147ms (next.js: 59ms, application-code: 87ms)
+ GET /admin/roles-permissions 200 in 90ms (next.js: 44ms, application-code: 46ms)
+ GET /admin/roles-permissions 200 in 122ms (next.js: 12ms, application-code: 110ms)
+ GET /admin/dashboard 200 in 57ms (next.js: 14ms, application-code: 42ms)
+ GET /admin/dashboard 200 in 58ms (next.js: 7ms, application-code: 51ms)
+ GET / 200 in 410ms (next.js: 36ms, application-code: 374ms)
+ GET / 200 in 319ms (next.js: 10ms, application-code: 309ms)
+ GET / 200 in 22ms (next.js: 11ms, application-code: 11ms)
+ GET / 200 in 283ms (next.js: 9ms, application-code: 274ms)
+ GET / 200 in 174ms (next.js: 4ms, application-code: 170ms)
+ GET / 200 in 247ms (next.js: 18ms, application-code: 228ms)
+ GET / 200 in 1021ms (next.js: 18ms, application-code: 1003ms)
+ GET /companies 200 in 59ms (next.js: 19ms, application-code: 39ms)
+ GET /companies 200 in 55ms (next.js: 10ms, application-code: 45ms)
+ GET /companies 200 in 113ms (next.js: 9ms, application-code: 104ms)
+ GET /articles 200 in 1223ms (next.js: 1170ms, application-code: 53ms)
+ GET /jobs 200 in 235ms (next.js: 31ms, application-code: 204ms)
+ GET /articles 200 in 49ms (next.js: 15ms, application-code: 35ms)
+ GET / 200 in 448ms (next.js: 18ms, application-code: 430ms)
+ GET /admin/articles 200 in 583ms (next.js: 18ms, application-code: 566ms)
+ GET /articles 200 in 719ms (next.js: 33ms, application-code: 686ms)
+ GET / 200 in 228ms (next.js: 8ms, application-code: 220ms)
+ GET / 200 in 213ms (next.js: 12ms, application-code: 202ms)
+ GET / 200 in 345ms (next.js: 9ms, application-code: 336ms)
+ GET / 200 in 16ms (next.js: 6ms, application-code: 11ms)
+ GET / 200 in 428ms (next.js: 19ms, application-code: 409ms)
+ GET / 200 in 20ms (next.js: 7ms, application-code: 13ms)
+ GET /admin/dashboard 200 in 276ms (next.js: 26ms, application-code: 250ms)
+ GET / 200 in 983ms (next.js: 72ms, application-code: 911ms)
+ GET / 200 in 893ms (next.js: 224ms, application-code: 668ms)
+ GET /jobs 200 in 464ms (next.js: 43ms, application-code: 421ms)
+ GET /companies 200 in 81ms (next.js: 30ms, application-code: 51ms)
+ GET /admin/job-categories 200 in 358ms (next.js: 25ms, application-code: 333ms)
+ GET /admin/companies 200 in 101ms (next.js: 36ms, application-code: 65ms)
+ GET /admin/jobs 200 in 170ms (next.js: 85ms, application-code: 84ms)
+ GET /admin/articles 200 in 182ms (next.js: 43ms, application-code: 139ms)
+ GET /admin/job-categories 200 in 418ms (next.js: 35ms, application-code: 383ms)
+ GET /admin/articles 200 in 71ms (next.js: 22ms, application-code: 49ms)
+ GET /admin/job-categories 200 in 652ms (next.js: 15ms, application-code: 637ms)
+○ Compiling /admin/countries ...
+ GET /admin/countries 200 in 5.3s (next.js: 5.0s, application-code: 326ms)
+ GET /admin/companies 200 in 2.9s (next.js: 982ms, application-code: 1901ms)
+ GET /admin/dashboard 200 in 3.5s (next.js: 1304ms, application-code: 2.2s)
+ GET /admin/companies 200 in 2.5s (next.js: 798ms, application-code: 1731ms)
+ GET /admin/jobs 200 in 3.5s (next.js: 951ms, application-code: 2.5s)
+ GET /admin/dashboard 200 in 2.9s (next.js: 39ms, application-code: 2.9s)
+✓ Finished writing to filesystem cache in 14.3s
+ GET /admin/jobs 200 in 1855ms (next.js: 78ms, application-code: 1777ms)
+ GET /admin/users 200 in 249ms (next.js: 118ms, application-code: 131ms)
+ GET /admin/dashboard 200 in 83ms (next.js: 31ms, application-code: 52ms)
+ GET /admin/users 200 in 56ms (next.js: 10ms, application-code: 46ms)
+ GET /admin/users 200 in 497ms (next.js: 14ms, application-code: 483ms)
+ GET /admin/users 200 in 279ms (next.js: 64ms, application-code: 215ms)
+ GET /admin/users 200 in 394ms (next.js: 59ms, application-code: 335ms)
+ GET /admin/dashboard 200 in 127ms (next.js: 79ms, application-code: 48ms)
+ GET /admin/users 200 in 71ms (next.js: 13ms, application-code: 58ms)
+ GET /admin/companies 200 in 99ms (next.js: 47ms, application-code: 52ms)
+ GET /admin/jobs 200 in 237ms (next.js: 86ms, application-code: 151ms)
+ GET /admin/dashboard 200 in 48ms (next.js: 7ms, application-code: 41ms)
+ GET /admin/dashboard 200 in 99ms (next.js: 11ms, application-code: 88ms)
+ GET /admin/jobs 200 in 57ms (next.js: 24ms, application-code: 33ms)
+ GET /admin/jobs 200 in 474ms (next.js: 13ms, application-code: 461ms)
+ GET /admin/articles 200 in 118ms (next.js: 29ms, application-code: 89ms)
+ GET /admin/companies 200 in 48ms (next.js: 10ms, application-code: 38ms)
+ GET /admin/roles-permissions 200 in 92ms (next.js: 28ms, application-code: 64ms)
+ GET /admin/settings 200 in 3.0s (next.js: 2.9s, application-code: 65ms)
+ GET /admin/settings 200 in 152ms (next.js: 29ms, application-code: 122ms)
+ GET /admin/audit-logs 200 in 3.4s (next.js: 3.3s, application-code: 92ms)
+ GET /admin/dashboard 200 in 121ms (next.js: 64ms, application-code: 57ms)
+ GET /admin/companies 200 in 90ms (next.js: 31ms, application-code: 59ms)
+ GET /admin/companies 200 in 336ms (next.js: 9ms, application-code: 327ms)
+ GET /admin/dashboard 200 in 40ms (next.js: 5ms, application-code: 35ms)
+ GET /admin/dashboard 200 in 235ms (next.js: 59ms, application-code: 176ms)
+✓ Compiled in 1640ms
+ GET /admin/dashboard 200 in 95ms (next.js: 25ms, application-code: 70ms)
+ GET /admin/dashboard 200 in 177ms (next.js: 17ms, application-code: 160ms)
+ GET /admin/users 200 in 219ms (next.js: 103ms, application-code: 116ms)
+ GET /admin/companies 200 in 195ms (next.js: 96ms, application-code: 99ms)
+ GET /admin/dashboard 200 in 147ms (next.js: 15ms, application-code: 131ms)
+ GET /admin/users 200 in 202ms (next.js: 52ms, application-code: 150ms)
+ GET /admin/companies 200 in 81ms (next.js: 25ms, application-code: 55ms)
+ GET /admin/articles 200 in 351ms (next.js: 132ms, application-code: 219ms)
+ GET / 200 in 599ms (next.js: 83ms, application-code: 516ms)
+ GET / 200 in 21ms (next.js: 8ms, application-code: 13ms)
+ GET / 200 in 43ms (next.js: 30ms, application-code: 12ms)
+ GET /articles 200 in 127ms (next.js: 61ms, application-code: 65ms)
+ GET /jobs 200 in 229ms (next.js: 33ms, application-code: 195ms)
+ GET /companies 200 in 80ms (next.js: 36ms, application-code: 44ms)
+ GET /admin/job-categories 200 in 361ms (next.js: 52ms, application-code: 309ms)
+ GET /admin/users 200 in 71ms (next.js: 19ms, application-code: 52ms)
+ GET /admin/users 200 in 449ms (next.js: 23ms, application-code: 426ms)
+ GET /admin/companies 200 in 75ms (next.js: 19ms, application-code: 56ms)
+ GET /admin/dashboard 200 in 105ms (next.js: 11ms, application-code: 94ms)
+ GET /admin/users 200 in 45ms (next.js: 8ms, application-code: 37ms)
+ GET /admin/dashboard 200 in 78ms (next.js: 9ms, application-code: 68ms)
+✓ Compiled in 2.8s
+ GET /admin/dashboard 200 in 334ms (next.js: 27ms, application-code: 307ms)
+ GET /admin/dashboard 200 in 149ms (next.js: 16ms, application-code: 133ms)
+ GET /admin/dashboard 200 in 147ms (next.js: 9ms, application-code: 139ms)
+ GET /admin/companies 200 in 52ms (next.js: 20ms, application-code: 32ms)
+ GET /admin/users 200 in 60ms (next.js: 27ms, application-code: 33ms)
+ GET /admin/jobs 200 in 71ms (next.js: 29ms, application-code: 42ms)
+ GET /admin/countries 200 in 214ms (next.js: 30ms, application-code: 184ms)
+ GET /admin/users 200 in 40ms (next.js: 9ms, application-code: 32ms)
+ GET /admin/tags 200 in 339ms (next.js: 25ms, application-code: 314ms)
+ GET /admin/companies 200 in 65ms (next.js: 6ms, application-code: 59ms)
+ GET /admin/companies 200 in 48ms (next.js: 6ms, application-code: 42ms)
+ GET /admin/users 200 in 51ms (next.js: 11ms, application-code: 39ms)
+ GET /admin/companies 200 in 35ms (next.js: 6ms, application-code: 29ms)
+ GET /admin/articles 200 in 54ms (next.js: 20ms, application-code: 35ms)
+ GET /admin/companies 200 in 46ms (next.js: 8ms, application-code: 38ms)
+ GET /admin/jobs 200 in 44ms (next.js: 9ms, application-code: 35ms)
+ GET /admin/users 200 in 51ms (next.js: 16ms, application-code: 34ms)
+ GET /admin/dashboard 200 in 63ms (next.js: 11ms, application-code: 52ms)
+ GET /admin/users 200 in 68ms (next.js: 9ms, application-code: 59ms)
+ GET /admin/dashboard 200 in 82ms (next.js: 26ms, application-code: 56ms)
+ GET /admin/users 200 in 66ms (next.js: 9ms, application-code: 56ms)
+ GET /admin/companies 200 in 65ms (next.js: 12ms, application-code: 53ms)
+ GET /admin/users 200 in 59ms (next.js: 8ms, application-code: 52ms)
+ GET /admin/jobs 200 in 46ms (next.js: 10ms, application-code: 36ms)
+ GET /admin/articles 200 in 97ms (next.js: 39ms, application-code: 58ms)
+ GET /admin/jobs 200 in 77ms (next.js: 26ms, application-code: 51ms)
+ GET /admin/industries 200 in 151ms (next.js: 40ms, application-code: 111ms)
+ GET /admin/industries 200 in 97ms (next.js: 8ms, application-code: 89ms)
+ GET /admin/settings 200 in 58ms (next.js: 24ms, application-code: 34ms)
+ GET /admin/dashboard 200 in 281ms (next.js: 77ms, application-code: 204ms)
+ GET /admin/cities 200 in 578ms (next.js: 136ms, application-code: 442ms)
+ GET /admin/articles 200 in 44ms (next.js: 9ms, application-code: 35ms)
+ GET /admin/companies 200 in 63ms (next.js: 8ms, application-code: 54ms)
+ GET /admin/users 200 in 137ms (next.js: 9ms, application-code: 128ms)
+ GET /admin/companies 200 in 45ms (next.js: 9ms, application-code: 36ms)
+ GET /admin/jobs 200 in 60ms (next.js: 6ms, application-code: 53ms)
+ GET /admin/users 200 in 46ms (next.js: 6ms, application-code: 40ms)
+ GET /admin/dashboard 200 in 74ms (next.js: 11ms, application-code: 63ms)
+ GET /admin/users 200 in 61ms (next.js: 16ms, application-code: 45ms)
+ GET /admin/companies 200 in 52ms (next.js: 8ms, application-code: 43ms)
+ GET /admin/articles 200 in 60ms (next.js: 9ms, application-code: 51ms)

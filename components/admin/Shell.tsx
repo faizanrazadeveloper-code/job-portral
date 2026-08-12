@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import ShellSidebar from "./ShellSidebar";
-import ShellTopbar from "./ShellTopbar";
+import AdminTopbar from "./AdminTopbar";
 
 export default function Shell({
   children,
@@ -16,7 +16,7 @@ export default function Shell({
       <ShellSidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
       <div className="flex min-w-0 flex-1 flex-col lg:pl-64">
-        <ShellTopbar onMenuClick={() => setSidebarOpen((v) => !v)} />
+        <AdminTopbar variant="dark" onMenuClick={() => setSidebarOpen(true)} />
 
         <main className="flex-1 px-4 py-6 sm:px-6 lg:px-8">{children}</main>
 

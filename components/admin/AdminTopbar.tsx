@@ -1,15 +1,18 @@
 "use client";
 
 import { Search, Menu, Bell, MessageSquare, ChevronDown, ShieldCheck, Moon } from "lucide-react";
+import { setOpen } from "./drawer-store";
 
 export default function AdminTopbar({
   variant = "light",
   showThemeToggle = false,
   sticky = true,
+  onMenuClick,
 }: {
   variant?: "light" | "dark";
   showThemeToggle?: boolean;
   sticky?: boolean;
+  onMenuClick?: () => void;
 }) {
   const dark = variant === "dark";
 
@@ -17,13 +20,17 @@ export default function AdminTopbar({
     <header
       className={`h-[65px] flex items-center gap-4 px-5 border-b ${
         sticky ? "sticky top-0 z-20" : ""
-      } ${dark ? "bg-[#0a1a35] border-[#0a1a35]" : "bg-white border-slate-100"}`}
+      } ${dark ? "bg-[#0B2B26] border-[#0B2B26]" : "bg-white border-slate-100"}`}
     >
-      <button className={`p-1.5 rounded-md ${dark ? "text-white hover:bg-white/10" : "text-slate-500 hover:bg-slate-50"}`}>
+      <button
+        onClick={onMenuClick ?? (() => setOpen(true))}
+        className={`lg:hidden p-1.5 rounded-md ${dark ? "text-white hover:bg-white/10" : "text-slate-500 hover:bg-slate-50"}`}
+        aria-label="Open menu"
+      >
         <Menu className="w-5 h-5" />
       </button>
 
-      <div className="flex-1 max-w-xl">
+      <div className="hidden sm:block flex-1 max-w-xl">
         <div className="relative">
           <Search className={`w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 ${dark ? "text-slate-300" : "text-slate-400"}`} />
           <input
@@ -35,7 +42,7 @@ export default function AdminTopbar({
             }`}
           />
           <span
-            className={`absolute right-2.5 top-1/2 -translate-y-1/2 text-[11px] font-medium px-1.5 py-0.5 rounded border ${
+            className={`absolute right-2.5 top-1/2 -translate-y-1/2 text-[11px] font-medium px-1.5 py-0.5 rounded border hidden md:inline ${
               dark ? "text-slate-300 border-white/20" : "text-slate-400 border-slate-200"
             }`}
           >

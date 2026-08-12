@@ -111,11 +111,11 @@ export default function HomePage() {
       <SiteHeader active="" />
 
       {/* Hero */}
-      <section className="relative bg-[#0a1b3d] text-white overflow-hidden">
+      <section className="relative bg-[#0B2B26] text-white overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1b3d] via-[#0a1b3d]/85 to-[#0a1b3d]/40 z-10" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_30%,rgba(37,99,235,0.35),transparent_55%)] z-10" />
-          <div className="w-full h-full bg-[linear-gradient(to_bottom,#0c2450,#081633)]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B2B26] via-[#0B2B26]/85 to-[#0B2B26]/40 z-10" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_30%,rgba(62,189,62,0.35),transparent_55%)] z-10" />
+          <div className="w-full h-full bg-[linear-gradient(to_bottom,#123832,#081C18)]" />
         </div>
         <div className="relative z-20 mx-auto max-w-7xl px-6 pt-16 pb-28 md:pt-20 md:pb-36">
           <div className="max-w-2xl">
@@ -291,7 +291,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats */}
-      <section className="bg-[#0a1b3d]">
+      <section className="bg-[#0B2B26]">
         <div className="mx-auto max-w-7xl px-6 py-10 grid grid-cols-2 md:grid-cols-5 gap-8 text-white">
           {stats.map((s) => (
             <div key={s.label} className="text-center">

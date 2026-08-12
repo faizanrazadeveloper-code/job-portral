@@ -36,15 +36,15 @@ import {
 } from "lucide-react";
 
 const sideNav = [
-  { label: "Dashboard", icon: Home },
-  { label: "My Jobs", icon: Briefcase },
-  { label: "Applicants", icon: Users },
-  { label: "Resumes", icon: FileText },
-  { label: "Company Profile", icon: Building2, active: true },
-  { label: "Billing & Plans", icon: CreditCard },
-  { label: "Messages", icon: Mail, badge: 3 },
-  { label: "Saved Candidates", icon: Star },
-  { label: "Settings", icon: Settings },
+  { label: "Dashboard", icon: Home, href: "/employer-dashboard" },
+  { label: "My Jobs", icon: Briefcase, href: "/admin/jobs" },
+  { label: "Applicants", icon: Users, href: "/admin/jobs" },
+  { label: "Resumes", icon: FileText, href: "/jobs" },
+  { label: "Company Profile", icon: Building2, href: "/employer/company-profile", active: true },
+  { label: "Billing & Plans", icon: CreditCard, href: "/admin/settings" },
+  { label: "Messages", icon: Mail, href: "/login", badge: 3 },
+  { label: "Saved Candidates", icon: Star, href: "/jobs" },
+  { label: "Settings", icon: Settings, href: "/admin/settings" },
 ];
 
 const steps = [
@@ -73,7 +73,7 @@ function SidebarContent() {
           </div>
         </div>
         <a
-          href="#"
+          href="/companies"
           className="mt-3 flex items-center gap-1.5 text-[12px] font-semibold text-brand-500"
         >
           View Company Page <ExternalLink className="h-3.5 w-3.5" />
@@ -81,10 +81,10 @@ function SidebarContent() {
       </div>
 
       <nav className="mt-4 flex-1 space-y-1 overflow-y-auto px-3">
-        {sideNav.map(({ label, icon: Icon, active, badge }) => (
+        {sideNav.map(({ label, icon: Icon, active, badge, href }) => (
           <a
             key={label}
-            href="#"
+            href={href}
             className={`nav-item ${active ? "nav-item-active" : ""}`}
           >
             <Icon className="h-[18px] w-[18px]" />
@@ -103,7 +103,7 @@ function SidebarContent() {
           <div className="h-full w-[85%] rounded-full bg-emerald-500" />
         </div>
         <a
-          href="#"
+          href="/companies"
           className="mt-3 flex items-center gap-1.5 text-[12px] font-semibold text-brand-500"
         >
           Preview Company Page <ExternalLink className="h-3.5 w-3.5" />
@@ -120,7 +120,7 @@ function SidebarContent() {
           <MoreVertical className="h-4 w-4 shrink-0 text-ink-500" />
         </div>
         <a
-          href="#"
+          href="/login"
           className="mt-2 flex items-center gap-3 px-3.5 py-2.5 text-[13px] font-semibold text-ink-700 hover:text-brand-500"
         >
           <LogOut className="h-[18px] w-[18px]" /> Log Out

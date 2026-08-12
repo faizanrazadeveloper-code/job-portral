@@ -125,17 +125,7 @@ export default function SettingsPage() {
                 <Field label="Site Logo">
                   <div className="flex items-center gap-3 rounded-lg border border-gray-200 p-3">
                     <span className="relative flex items-center gap-2 rounded-md border border-gray-100 px-3 py-2">
-                      <span className="flex h-6 w-6 items-center justify-center rounded bg-brand-600 text-white">
-                        <Flame size={13} fill="white" strokeWidth={0} />
-                      </span>
-                      <span className="leading-tight">
-                        <span className="block text-[12px] font-extrabold text-gray-900">
-                          ENERGY TAIL
-                        </span>
-                        <span className="block text-[9px] text-gray-500">
-                          Oil, Gas &amp; Energy Jobs
-                        </span>
-                      </span>
+                      <img src="/logo.png" alt="Energy Tail" className="h-8 w-auto object-contain" />
                       <button className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-400">
                         <X size={10} />
                       </button>

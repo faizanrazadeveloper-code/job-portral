@@ -74,7 +74,7 @@ export default function LoginPage() {
                   <input type="checkbox" defaultChecked className="rounded border-slate-300 text-blue-600 focus:ring-blue-500" />
                   Remember me
                 </label>
-                <a href="#" className="text-blue-600 font-medium hover:underline">
+                <a href="/forgot-password" className="text-blue-600 font-medium hover:underline">
                   Forgot Password?
                 </a>
               </div>
@@ -118,7 +118,7 @@ export default function LoginPage() {
             <Headphones className="w-5 h-5 text-blue-600" />
             <div>
               <div className="font-semibold text-slate-800 text-sm">Need Help?</div>
-              <a href="#" className="text-xs text-blue-600 hover:underline">Contact our support team</a>
+              <a href="/register" className="text-xs text-blue-600 hover:underline">Contact our support team</a>
             </div>
           </div>
         </section>

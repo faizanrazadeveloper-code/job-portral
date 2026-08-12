@@ -158,7 +158,7 @@ export default function CompanyDetailsPage() {
         </div>
       ) : (
         <div className="grid grid-cols-1 xl:grid-cols-[1fr_320px] gap-6">
-          <div className="space-y-6">
+          <div className="space-y-6 min-w-0">
             <div className="bg-white rounded-xl border border-gray-200 p-5 shadow-sm">
               <h3 className="font-semibold text-gray-900 mb-4">About Company</h3>
               <p className="text-sm text-gray-500 leading-relaxed">

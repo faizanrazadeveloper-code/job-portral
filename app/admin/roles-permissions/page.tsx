@@ -54,9 +54,9 @@ export default function RolesPermissionsPage() {
       <AdminSidebar active="roles" />
 
       <div className="flex-1 min-w-0 flex flex-col">
-        <AdminTopbar variant="light" />
+        <AdminTopbar variant="dark" />
 
-        <main className="flex-1 p-6 space-y-6">
+        <main className="flex-1 p-4 sm:p-6 space-y-6">
           {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>

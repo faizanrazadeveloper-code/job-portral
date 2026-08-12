@@ -21,7 +21,7 @@ export default function SiteHeader({ active }: { active?: string }) {
   return (
     <header className="sticky top-0 z-50 bg-white">
       {/* Top utility bar */}
-      <div className="hidden lg:block bg-[#0a1b3d] text-slate-300 text-xs">
+      <div className="hidden lg:block bg-[#0B2B26] text-slate-300 text-xs">
         <div className="mx-auto max-w-7xl px-6 py-2 flex items-center justify-between">
           <p className="flex items-center gap-1.5">
             <Flame size={12} className="text-blue-400" />
@@ -47,17 +47,7 @@ export default function SiteHeader({ active }: { active?: string }) {
       <div className="border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between gap-6">
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <span className="grid place-items-center w-9 h-9 rounded-lg bg-blue-600 text-white">
-              <Flame size={20} />
-            </span>
-            <span className="leading-tight">
-              <span className="block text-lg font-extrabold tracking-tight text-slate-900">
-                ENERGY <span className="text-blue-600">TAIL</span>
-              </span>
-              <span className="block text-[10px] font-medium text-slate-400 tracking-wide">
-                Oil, Gas &amp; Energy Jobs
-              </span>
-            </span>
+            <img src="/logo.png" alt="Energy Tail" className="h-10 w-auto object-contain" />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-600">

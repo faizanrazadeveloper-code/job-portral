@@ -3,26 +3,26 @@ import Logo from "./Logo";
 import { LinkedinIcon as Linkedin, FacebookIcon as Facebook, InstagramIcon as Instagram, XIcon } from "./SocialIcons";
 
 const columns = [
-  { title: "For Job Seekers", links: ["Browse Jobs", "Companies", "Articles", "Career Advice"] },
-  { title: "For Employers", links: ["Post a Job", "Pricing", "Employer Resources", "Help Center"] },
-  { title: "Company", links: ["About Us", "Contact Us", "Privacy Policy", "Terms of Service"] },
+  { title: "For Job Seekers", links: [{ label: "Browse Jobs", href: "/jobs" }, { label: "Companies", href: "/companies" }, { label: "Articles", href: "/articles" }, { label: "Career Advice", href: "/articles" }] },
+  { title: "For Employers", links: [{ label: "Post a Job", href: "/employer-dashboard" }, { label: "Pricing", href: "/register" }, { label: "Employer Resources", href: "/employer-dashboard" }, { label: "Help Center", href: "/login" }] },
+  { title: "Company", links: [{ label: "About Us", href: "/" }, { label: "Contact Us", href: "/login" }, { label: "Privacy Policy", href: "/register" }, { label: "Terms of Service", href: "/register" }] },
 ];
 
 export default function FooterAlt() {
   return (
-    <footer className="bg-[#0a1a35] text-slate-300 mt-auto">
+    <footer className="bg-[#0B2B26] text-slate-300 mt-auto">
       <div className="mx-auto max-w-7xl px-6 py-12 grid grid-cols-1 md:grid-cols-5 gap-10">
         <div className="md:col-span-1">
-          <Logo light />
+          <Logo />
         </div>
         {columns.map((col) => (
           <div key={col.title}>
             <h4 className="text-white font-semibold mb-4 text-sm">{col.title}</h4>
             <ul className="space-y-2.5 text-sm">
               {col.links.map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-slate-400 hover:text-white">
-                    {link}
+                <li key={link.label}>
+                  <a href={link.href} className="text-slate-400 hover:text-white">
+                    {link.label}
                   </a>
                 </li>
               ))}

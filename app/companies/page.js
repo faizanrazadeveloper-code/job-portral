@@ -160,7 +160,7 @@ export default function CompaniesPage() {
       <MarketingHeader active="Companies" />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-[#0b1c3d]">
+      <section className="relative overflow-hidden bg-[#0B2B26]">
         <div className="absolute inset-0 opacity-30">
           <div className="ph-city absolute inset-0" />
           <div className="absolute bottom-0 left-[55%] right-0 h-2/3 bg-[linear-gradient(90deg,transparent,rgba(255,190,120,.35),transparent)]" />

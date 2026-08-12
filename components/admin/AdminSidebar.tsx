@@ -1,6 +1,9 @@
 "use client";
 
+import { useSyncExternalStore } from "react";
 import Link from "next/link";
+import { X } from "lucide-react";
+import { subscribe, getOpen, setOpen } from "./drawer-store";
 import {
   Home,
   Users as UsersIcon,
@@ -19,7 +22,6 @@ import {
   ExternalLink,
   Trash2,
   Activity,
-  Flame,
 } from "lucide-react";
 
 export type AdminNavKey =
@@ -97,27 +99,11 @@ function NavSection({
   );
 }
 
-export default function AdminSidebar({
-  active,
-  sticky = true,
-}: {
-  active: AdminNavKey;
-  sticky?: boolean;
-}) {
+function SidebarInner({ active }: { active: AdminNavKey }) {
   return (
-    <aside
-      className={`w-64 shrink-0 border-r border-slate-100 bg-white flex flex-col ${
-        sticky ? "h-screen sticky top-0" : "self-start"
-      }`}
-    >
+    <>
       <div className="h-[65px] flex items-center gap-2.5 px-5 border-b border-slate-100 shrink-0">
-        <div className="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center shrink-0">
-          <Flame className="w-5 h-5 text-white" />
-        </div>
-        <div className="leading-tight">
-          <div className="font-extrabold text-slate-900 text-sm tracking-tight">ENERGY TAIL</div>
-          <div className="text-[10px] text-slate-400 font-medium">Oil, Gas &amp; Energy Jobs</div>
-        </div>
+        <img src="/logo.png" alt="Energy Tail" className="h-9 w-auto object-contain" />
       </div>
 
       <nav className="flex-1 overflow-y-auto px-3 py-5 space-y-6">
@@ -139,20 +125,62 @@ export default function AdminSidebar({
 
         <div className="rounded-lg border border-slate-100 p-2.5">
           <div className="text-[11px] font-semibold text-slate-400 px-1 mb-1.5">Quick Links</div>
-          <a href="#" className="flex items-center justify-between px-1.5 py-1.5 rounded-md text-sm text-slate-600 hover:bg-slate-50">
+          <a href="/" className="flex items-center justify-between px-1.5 py-1.5 rounded-md text-sm text-slate-600 hover:bg-slate-50">
             View Site
             <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
           </a>
-          <a href="#" className="flex items-center justify-between px-1.5 py-1.5 rounded-md text-sm text-slate-600 hover:bg-slate-50">
+          <a href="/admin/audit-logs" className="flex items-center justify-between px-1.5 py-1.5 rounded-md text-sm text-slate-600 hover:bg-slate-50">
             Clear Cache
             <Trash2 className="w-3.5 h-3.5 text-slate-400" />
           </a>
-          <a href="#" className="flex items-center justify-between px-1.5 py-1.5 rounded-md text-sm text-slate-600 hover:bg-slate-50">
+          <a href="/admin/audit-logs" className="flex items-center justify-between px-1.5 py-1.5 rounded-md text-sm text-slate-600 hover:bg-slate-50">
             System Status
             <Activity className="w-3.5 h-3.5 text-emerald-500" />
           </a>
         </div>
       </div>
-    </aside>
+    </>
+  );
+}
+
+export default function AdminSidebar({
+  active,
+  sticky = true,
+}: {
+  active: AdminNavKey;
+  sticky?: boolean;
+}) {
+  const open = useSyncExternalStore(subscribe, getOpen, getOpen);
+
+  return (
+    <>
+      <aside
+        className={`hidden lg:flex w-64 shrink-0 border-r border-slate-100 bg-white flex-col ${
+          sticky ? "h-screen sticky top-0" : "self-start"
+        }`}
+      >
+        <SidebarInner active={active} />
+      </aside>
+
+      {open && (
+        <div className="fixed inset-0 z-50 lg:hidden">
+          <div
+            className="absolute inset-0 bg-black/40"
+            onClick={() => setOpen(false)}
+            aria-hidden
+          />
+          <aside className="absolute inset-y-0 left-0 flex w-[280px] max-w-[85vw] flex-col bg-white shadow-xl">
+            <button
+              className="absolute right-3 top-[22px] z-10 rounded-lg p-1.5 text-slate-500 hover:bg-slate-50"
+              onClick={() => setOpen(false)}
+              aria-label="Close menu"
+            >
+              <X className="w-5 h-5" />
+            </button>
+            <SidebarInner active={active} />
+          </aside>
+        </div>
+      )}
+    </>
   );
 }

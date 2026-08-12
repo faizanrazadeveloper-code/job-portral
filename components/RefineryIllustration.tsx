@@ -3,7 +3,7 @@ export default function RefineryIllustration({ className = "" }: { className?: s
     <svg viewBox="0 0 400 220" className={className} preserveAspectRatio="xMidYMax slice">
       <defs>
         <linearGradient id="skyfade" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#0a1a35" stopOpacity="0" />
+          <stop offset="0%" stopColor="#0B2B26" stopOpacity="0" />
           <stop offset="100%" stopColor="#050d1f" stopOpacity="0.9" />
         </linearGradient>
       </defs>

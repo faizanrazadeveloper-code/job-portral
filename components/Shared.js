@@ -5,7 +5,6 @@ import { useState } from "react";
 import {
   Bell,
   ChevronDown,
-  Flame,
   Mail,
   MessageSquare,
   Menu,
@@ -62,28 +61,17 @@ export function Youtube({ className = "h-4 w-4" }) {
 
 export function Logo({ light = false, compact = false }) {
   return (
-    <Link href="/" className="flex shrink-0 items-center gap-2.5">
-      <span className="grid h-9 w-9 place-items-center rounded-lg">
-        <Flame className="h-8 w-8 fill-brand-500 text-brand-500" strokeWidth={1} />
-      </span>
-      <span className="leading-none">
-        <span
-          className={`block text-[19px] font-extrabold tracking-tight ${
-            light ? "text-white" : "text-ink-900"
-          }`}
-        >
-          ENERGY <span className="text-brand-500">TAIL</span>
+    <Link href="/" className="flex shrink-0 items-center">
+      <img
+        src="/logo.png"
+        alt="Energy Tail"
+        className={`h-10 w-auto object-contain ${light ? "brightness-0 invert" : ""}`}
+      />
+      {!compact && light && (
+        <span className="ml-2 hidden text-[10.5px] font-medium text-white/70 sm:block">
+          Oil, Gas &amp; Energy Jobs
         </span>
-        {!compact && (
-          <span
-            className={`mt-1 block text-[10.5px] font-medium ${
-              light ? "text-white/70" : "text-ink-500"
-            }`}
-          >
-            Oil, Gas &amp; Energy Jobs
-          </span>
-        )}
-      </span>
+      )}
     </Link>
   );
 }
@@ -133,7 +121,7 @@ export function PublicHeader({ active = "Jobs", user = "John Smith", role = "Job
           {links.map((l) => (
             <Link
               key={l}
-              href={l === "Articles" ? "/articles" : l === "Companies" ? "/companies" : "#"}
+              href={l === "Jobs" ? "/jobs" : l === "Articles" ? "/articles" : "/companies"}
               className={`relative py-6 text-[13.5px] font-semibold transition ${
                 active === l ? "text-brand-500" : "text-ink-700 hover:text-brand-500"
               }`}
@@ -185,7 +173,7 @@ export function PublicHeader({ active = "Jobs", user = "John Smith", role = "Job
           {[...links, "For Employers"].map((l) => (
             <Link
               key={l}
-              href={l === "Articles" ? "/articles" : l === "Companies" ? "/companies" : "#"}
+              href={l === "Jobs" ? "/jobs" : l === "For Employers" ? "/employer-dashboard" : l === "Articles" ? "/articles" : "/companies"}
               className="block border-b border-[#f1f5f9] py-3 text-[14px] font-semibold text-ink-700"
             >
               {l}
@@ -202,17 +190,43 @@ export function PublicHeader({ active = "Jobs", user = "John Smith", role = "Job
 const footerCols = [
   {
     title: "For Job Seekers",
-    items: ["Browse Jobs", "Companies", "Articles", "Career Advice", "Create Profile"],
+    items: [
+      { label: "Browse Jobs", href: "/jobs" },
+      { label: "Companies", href: "/companies" },
+      { label: "Articles", href: "/articles" },
+      { label: "Career Advice", href: "/articles" },
+      { label: "Create Profile", href: "/register" },
+    ],
   },
   {
     title: "For Employers",
-    items: ["Post a Job", "Search Candidates", "Employer Branding", "Pricing", "Resources"],
+    items: [
+      { label: "Post a Job", href: "/employer-dashboard" },
+      { label: "Search Candidates", href: "/jobs" },
+      { label: "Employer Branding", href: "/employer/company-profile" },
+      { label: "Pricing", href: "/register" },
+      { label: "Resources", href: "/articles" },
+    ],
   },
   {
     title: "Company",
-    items: ["About Us", "Contact Us", "Privacy Policy", "Terms of Service", "Cookie Policy"],
+    items: [
+      { label: "About Us", href: "/" },
+      { label: "Contact Us", href: "/login" },
+      { label: "Privacy Policy", href: "/register" },
+      { label: "Terms of Service", href: "/register" },
+      { label: "Cookie Policy", href: "/register" },
+    ],
   },
-  { title: "Support", items: ["Help Center", "Contact Support", "FAQs", "Security"] },
+  {
+    title: "Support",
+    items: [
+      { label: "Help Center", href: "/login" },
+      { label: "Contact Support", href: "/login" },
+      { label: "FAQs", href: "/login" },
+      { label: "Security", href: "/login" },
+    ],
+  },
 ];
 
 export function PublicFooter() {
@@ -230,7 +244,7 @@ export function PublicFooter() {
               {[Linkedin, Twitter, Facebook, Youtube].map((Icon, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href="/"
                   className="grid h-9 w-9 place-items-center rounded-full border border-[#e2e8f2] text-ink-500 transition hover:border-brand-500 hover:text-brand-500"
                 >
                   <Icon className="h-4 w-4" />
@@ -244,9 +258,9 @@ export function PublicFooter() {
               <h4 className="mb-4 text-[13.5px] font-bold">{col.title}</h4>
               <ul className="space-y-2.5">
                 {col.items.map((i) => (
-                  <li key={i}>
-                    <a href="#" className="text-[12.5px] text-ink-500 hover:text-brand-500">
-                      {i}
+                  <li key={i.label}>
+                    <a href={i.href} className="text-[12.5px] text-ink-500 hover:text-brand-500">
+                      {i.label}
                     </a>
                   </li>
                 ))}
@@ -272,7 +286,7 @@ export function PublicFooter() {
               {[Linkedin, Twitter, Facebook, Youtube].map((Icon, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href="/"
                   className="grid h-9 w-9 place-items-center rounded-full border border-[#e2e8f2] text-ink-500 transition hover:border-brand-500 hover:text-brand-500"
                 >
                   <Icon className="h-4 w-4" />
@@ -297,7 +311,7 @@ export function PublicFooter() {
 
 export function MarketingTopStrip() {
   return (
-    <div className="bg-[#0b1c3d] text-white">
+    <div className="bg-[#0B2B26] text-white">
       <div className="mx-auto flex h-11 max-w-[1440px] items-center gap-6 px-4 text-[12px] sm:px-6 lg:px-8">
         <span className="hidden items-center gap-2 md:flex">
           <Mail className="h-3.5 w-3.5" /> info@energytail.com
@@ -312,7 +326,7 @@ export function MarketingTopStrip() {
         </span>
         <div className="ml-auto flex items-center gap-3.5 lg:ml-0">
           {[Linkedin, Facebook, Twitter, Instagram, Youtube].map((Icon, i) => (
-            <a key={i} href="#" className="text-white/80 hover:text-white">
+            <a key={i} href="/" className="text-white/80 hover:text-white">
               <Icon className="h-3.5 w-3.5" />
             </a>
           ))}
@@ -333,7 +347,17 @@ export function MarketingHeader({ active = "Companies" }) {
           {links.map((l) => (
             <Link
               key={l}
-              href={l === "Articles" ? "/articles" : l === "Companies" ? "/companies" : "#"}
+              href={
+                l === "Jobs"
+                  ? "/jobs"
+                  : l === "Companies"
+                    ? "/companies"
+                    : l === "Categories"
+                      ? "/admin/job-categories"
+                      : l === "Locations"
+                        ? "/admin/countries"
+                        : "/articles"
+              }
               className={`relative py-6 text-[13.5px] font-semibold transition ${
                 active === l ? "text-brand-500" : "text-ink-700 hover:text-brand-500"
               }`}
@@ -346,15 +370,15 @@ export function MarketingHeader({ active = "Companies" }) {
           ))}
         </nav>
         <div className="ml-auto hidden items-center gap-3 xl:flex">
-          <button className="btn h-10 border border-[#dfe6f1] text-ink-700 hover:bg-slate-50">
+          <Link className="btn h-10 border border-[#dfe6f1] text-ink-700 hover:bg-slate-50" href="/login">
             Login
-          </button>
-          <button className="btn h-10 border border-brand-500 text-brand-500 hover:bg-brand-50">
+          </Link>
+          <Link className="btn h-10 border border-brand-500 text-brand-500 hover:bg-brand-50" href="/register">
             Register
-          </button>
-          <button className="btn-primary h-10">
+          </Link>
+          <Link className="btn-primary h-10" href="/employer-dashboard">
             <Send className="h-4 w-4" /> Post a Job
-          </button>
+          </Link>
         </div>
         <button className="ml-auto xl:hidden" onClick={() => setOpen(!open)} aria-label="Menu">
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -365,13 +389,23 @@ export function MarketingHeader({ active = "Companies" }) {
           {links.map((l) => (
             <Link
               key={l}
-              href={l === "Articles" ? "/articles" : l === "Companies" ? "/companies" : "#"}
+              href={
+                l === "Jobs"
+                  ? "/jobs"
+                  : l === "Companies"
+                    ? "/companies"
+                    : l === "Categories"
+                      ? "/admin/job-categories"
+                      : l === "Locations"
+                        ? "/admin/countries"
+                        : "/articles"
+              }
               className="block border-b border-[#f1f5f9] py-3 text-[14px] font-semibold text-ink-700"
             >
               {l}
             </Link>
           ))}
-          <button className="btn-primary mt-4 w-full">Post a Job</button>
+          <Link className="btn-primary mt-4 w-full" href="/employer-dashboard">Post a Job</Link>
         </div>
       )}
     </header>
@@ -381,41 +415,59 @@ export function MarketingHeader({ active = "Companies" }) {
 const darkFooterCols = [
   {
     title: "For Job Seekers",
-    items: ["Browse Jobs", "Create Profile", "Saved Jobs", "Job Alerts", "Career Advice"],
+    items: [
+      { label: "Browse Jobs", href: "/jobs" },
+      { label: "Create Profile", href: "/register" },
+      { label: "Saved Jobs", href: "/jobs" },
+      { label: "Job Alerts", href: "/jobs" },
+      { label: "Career Advice", href: "/articles" },
+    ],
   },
   {
     title: "For Employers",
     items: [
-      "Post a Job",
-      "Packages & Pricing",
-      "Employer Dashboard",
-      "Company Profile",
-      "Search Resumes",
+      { label: "Post a Job", href: "/employer-dashboard" },
+      { label: "Packages & Pricing", href: "/register" },
+      { label: "Employer Dashboard", href: "/employer-dashboard" },
+      { label: "Company Profile", href: "/employer/company-profile" },
+      { label: "Search Resumes", href: "/jobs" },
     ],
   },
   {
     title: "Resources",
-    items: ["Articles", "Industry News", "Salary Guide", "Companies", "Categories"],
+    items: [
+      { label: "Articles", href: "/articles" },
+      { label: "Industry News", href: "/articles" },
+      { label: "Salary Guide", href: "/jobs" },
+      { label: "Companies", href: "/companies" },
+      { label: "Categories", href: "/admin/job-categories" },
+    ],
   },
   {
     title: "Company",
-    items: ["About Us", "Contact Us", "Terms of Use", "Privacy Policy", "Sitemap"],
+    items: [
+      { label: "About Us", href: "/" },
+      { label: "Contact Us", href: "/login" },
+      { label: "Terms of Use", href: "/register" },
+      { label: "Privacy Policy", href: "/register" },
+      { label: "Sitemap", href: "/" },
+    ],
   },
 ];
 
 export function DarkFooter() {
   return (
-    <footer className="bg-[#0b1c3d] text-white">
+    <footer className="bg-[#0B2B26] text-white">
       <div className="mx-auto max-w-[1440px] px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]">
           <div>
-            <Logo light />
+            <Logo />
             <p className="mt-4 max-w-[250px] text-[12.5px] leading-relaxed text-white/60">
               Connecting energy professionals with top employers worldwide.
             </p>
             <div className="mt-6 flex gap-4">
               {[Linkedin, Facebook, Twitter, Instagram, Youtube].map((Icon, i) => (
-                <a key={i} href="#" className="text-white/70 hover:text-white">
+                <a key={i} href="/" className="text-white/70 hover:text-white">
                   <Icon className="h-[18px] w-[18px]" />
                 </a>
               ))}
@@ -426,9 +478,9 @@ export function DarkFooter() {
               <h4 className="mb-4 text-[13.5px] font-bold">{col.title}</h4>
               <ul className="space-y-2.5">
                 {col.items.map((i) => (
-                  <li key={i}>
-                    <a href="#" className="text-[12.5px] text-white/60 hover:text-white">
-                      {i}
+                  <li key={i.label}>
+                    <a href={i.href} className="text-[12.5px] text-white/60 hover:text-white">
+                      {i.label}
                     </a>
                   </li>
                 ))}

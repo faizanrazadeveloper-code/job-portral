@@ -37,8 +37,8 @@ export default function CompaniesPage() {
       </div>
 
       <div className="grid grid-cols-1 xl:grid-cols-[1fr_320px] gap-6">
-        <div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+        <div className="min-w-0">
+          <div className="grid grid-cols-2 gap-4 mb-6">
             <StatCard
               icon={Building2}
               iconBg="bg-blue-50"

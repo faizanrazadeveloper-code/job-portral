@@ -3,7 +3,7 @@ import { LinkedinIcon, FacebookIcon, InstagramIcon, YoutubeIcon, XIcon } from ".
 
 export default function TopBar() {
   return (
-    <div className="bg-[#0a1a35] text-slate-300 text-xs">
+    <div className="bg-[#0B2B26] text-slate-300 text-xs">
       <div className="mx-auto max-w-7xl px-4 py-2 flex items-center justify-between gap-4">
         <div className="hidden sm:flex items-center gap-5">
           <a href="mailto:info@energytail.com" className="flex items-center gap-1.5 hover:text-white">
