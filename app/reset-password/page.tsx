@@ -111,15 +111,18 @@ export default function ResetPasswordPage() {
         </div>
 
         {/* Secure & simple note */}
-        <div className="mx-auto max-w-7xl px-6 pb-14">
-          <div className="bg-blue-50 border border-blue-100 rounded-2xl px-6 sm:px-8 py-5 flex items-start gap-4 max-w-2xl">
-            <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center shrink-0">
-              <ShieldCheck className="w-5 h-5 text-white" />
-            </div>
-            <div>
-              <div className="font-semibold text-slate-800 text-sm">Secure &amp; Simple</div>
-              <div className="text-sm text-slate-500 mt-0.5 leading-relaxed">
-                We take your security seriously. Your password reset link will expire in 30 minutes for your protection.
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div />
+          <div className="px-6 sm:px-16 pb-14">
+            <div className="bg-blue-50 border border-blue-100 rounded-2xl px-6 sm:px-8 py-5 flex items-start gap-4 max-w-lg">
+              <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center shrink-0">
+                <ShieldCheck className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <div className="font-semibold text-slate-800 text-sm">Secure &amp; Simple</div>
+                <div className="text-sm text-slate-500 mt-0.5 leading-relaxed">
+                  We take your security seriously. Your password reset link will expire in 30 minutes for your protection.
+                </div>
               </div>
             </div>
           </div>

@@ -97,9 +97,19 @@ function NavSection({
   );
 }
 
-export default function AdminSidebar({ active }: { active: AdminNavKey }) {
+export default function AdminSidebar({
+  active,
+  sticky = true,
+}: {
+  active: AdminNavKey;
+  sticky?: boolean;
+}) {
   return (
-    <aside className="w-64 shrink-0 border-r border-slate-100 bg-white flex flex-col h-screen sticky top-0">
+    <aside
+      className={`w-64 shrink-0 border-r border-slate-100 bg-white flex flex-col ${
+        sticky ? "h-screen sticky top-0" : "self-start"
+      }`}
+    >
       <div className="h-[65px] flex items-center gap-2.5 px-5 border-b border-slate-100 shrink-0">
         <div className="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center shrink-0">
           <Flame className="w-5 h-5 text-white" />
@@ -116,7 +126,7 @@ export default function AdminSidebar({ active }: { active: AdminNavKey }) {
         <NavSection title="SYSTEM" items={systemNav} active={active} />
       </nav>
 
-      <div className="border-t border-slate-100 p-3 space-y-3 shrink-0">
+      <div className="border-t border-slate-100 px-3 pt-2.5 pb-3 space-y-3 shrink-0">
         <div className="flex items-center gap-2.5 px-2">
           <div className="w-9 h-9 rounded-full bg-slate-200 overflow-hidden shrink-0 flex items-center justify-center text-slate-500 text-xs font-semibold">
             SA
