@@ -44,10 +44,10 @@ body {
         @apply text-red-500;
     }
     .input {
-        @apply h-11 w-full rounded-lg border border-[#dfe6f1] bg-white px-3.5 text-[13.5px] text-ink-700 outline-none transition placeholder: text-ink-500/70 focus: border-brand-500 focus: ring-2 focus: ring-brand-500/15;
+        @apply h-11 w-full rounded-lg border border-[#dfe6f1] bg-white px-3.5 text-[13.5px] text-ink-700 outline-none transition placeholder:text-ink-500/70 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/15;
     }
     .select {
-        @apply h-11 w-full rounded-lg border border-[#dfe6f1] bg-white px-3.5 text-[13.5px] text-ink-700 outline-none transition placeholder: text-ink-500/70 focus: border-brand-500 focus: ring-2 focus: ring-brand-500/15 appearance-none pr-10;
+        @apply h-11 w-full rounded-lg border border-[#dfe6f1] bg-white px-3.5 text-[13.5px] text-ink-700 outline-none transition placeholder:text-ink-500/70 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/15 appearance-none pr-10;
         background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
         background-position: right 0.9rem center;
@@ -57,10 +57,10 @@ body {
         @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 text-[13.5px] font-semibold transition;
     }
     .btn-primary {
-        @apply inline-flex h-11 items-center justify-center gap-2 rounded-lg px-4 text-[13.5px] font-semibold transition bg-brand-500 text-white hover: bg-brand-600;
+        @apply inline-flex h-11 items-center justify-center gap-2 rounded-lg px-4 text-[13.5px] font-semibold transition bg-brand-500 text-white hover:bg-brand-600;
     }
     .btn-ghost {
-        @apply inline-flex h-11 items-center justify-center gap-2 rounded-lg px-4 text-[13.5px] font-semibold transition border border-[#dfe6f1] bg-white text-ink-700 hover: bg-slate-50;
+        @apply inline-flex h-11 items-center justify-center gap-2 rounded-lg px-4 text-[13.5px] font-semibold transition border border-[#dfe6f1] bg-white text-ink-700 hover:bg-slate-50;
     }
     .sect-title {
         @apply mb-4 text-[15px] font-bold text-brand-500;
@@ -69,7 +69,7 @@ body {
         @apply inline-flex items-center rounded-md px-2.5 py-1 text-[11.5px] font-semibold;
     }
     .nav-item {
-        @apply flex items-center gap-3 rounded-lg px-3.5 py-2.5 text-[13.5px] font-semibold text-ink-700 transition hover: bg-brand-50 hover: text-brand-500;
+        @apply flex items-center gap-3 rounded-lg px-3.5 py-2.5 text-[13.5px] font-semibold text-ink-700 transition hover:bg-brand-50 hover:text-brand-500;
     }
     .nav-item-active {
         @apply bg-brand-50 text-brand-500;
