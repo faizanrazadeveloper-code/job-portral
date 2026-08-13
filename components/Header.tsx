@@ -3,7 +3,15 @@ import { Send } from "lucide-react";
 import Logo from "./Logo";
 import TopBar from "./TopBar";
 
-const navItems = ["Jobs", "Companies", "Categories", "Articles", "Locations", "Packages", "About Us"];
+const navItems = [
+  "Jobs",
+  "Companies",
+  "Categories",
+  "Articles",
+  "Locations",
+  "Packages",
+  "About Us",
+];
 
 export default function Header() {
   return (

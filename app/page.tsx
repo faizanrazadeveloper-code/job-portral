@@ -131,33 +131,33 @@ export default function HomePage() {
 
           {/* Search card */}
           <div className="mt-10 bg-white rounded-2xl shadow-2xl max-w-3xl overflow-hidden">
-            <div className="flex text-sm font-semibold">
-              <button className="px-6 py-3 text-blue-600 border-b-2 border-blue-600 flex items-center gap-2">
+            <div className="flex flex-wrap text-sm font-semibold border-b border-slate-100">
+              <button className="flex-1 px-4 sm:px-6 py-3 text-blue-600 border-b-2 border-blue-600 flex items-center justify-center gap-2">
                 <Briefcase size={15} /> Find Jobs
               </button>
-              <button className="px-6 py-3 text-slate-500 flex items-center gap-2">
+              <button className="flex-1 px-4 sm:px-6 py-3 text-slate-500 flex items-center justify-center gap-2">
                 <Building2 size={15} /> Find Companies
               </button>
             </div>
-            <div className="p-4 flex flex-col md:flex-row gap-3">
-              <div className="flex-1 flex items-center gap-2 border border-slate-200 rounded-lg px-3 py-2.5">
-                <Search size={16} className="text-slate-400" />
+            <div className="p-4 flex flex-col lg:flex-row gap-3">
+              <div className="flex-1 min-w-0 flex items-center gap-2 border border-slate-200 rounded-lg px-3 py-2.5">
+                <Search size={16} className="text-slate-400 shrink-0" />
                 <input
                   placeholder="Job title, keywords or company"
-                  className="w-full text-sm outline-none placeholder:text-slate-400 text-slate-700"
+                  className="w-full text-sm outline-none placeholder:text-slate-400 text-slate-700 bg-transparent"
                 />
               </div>
-              <div className="flex items-center gap-2 border border-slate-200 rounded-lg px-3 py-2.5 md:w-48">
-                <MapPin size={16} className="text-slate-400" />
-                <span className="text-sm text-slate-500">All Countries</span>
+              <div className="flex items-center gap-2 border border-slate-200 rounded-lg px-3 py-2.5 lg:w-48">
+                <MapPin size={16} className="text-slate-400 shrink-0" />
+                <span className="text-sm text-slate-500 truncate">All Countries</span>
               </div>
-              <div className="flex items-center gap-2 border border-slate-200 rounded-lg px-3 py-2.5 md:w-48">
-                <Building2 size={16} className="text-slate-400" />
-                <span className="text-sm text-slate-500">All Categories</span>
+              <div className="flex items-center gap-2 border border-slate-200 rounded-lg px-3 py-2.5 lg:w-48">
+                <Building2 size={16} className="text-slate-400 shrink-0" />
+                <span className="text-sm text-slate-500 truncate">All Categories</span>
               </div>
               <Link
                 href="/jobs"
-                className="bg-blue-600 hover:bg-blue-700 transition-colors text-white text-sm font-semibold rounded-lg px-6 py-2.5 flex items-center justify-center gap-2"
+                className="bg-blue-600 hover:bg-blue-700 transition-colors text-white text-sm font-semibold rounded-lg px-6 py-2.5 flex items-center justify-center gap-2 shrink-0"
               >
                 <Search size={15} /> Search Jobs
               </Link>
@@ -347,12 +347,12 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-          <div className="flex w-full md:w-auto gap-2 shrink-0">
+          <div className="flex flex-col sm:flex-row w-full md:w-auto gap-2 shrink-0">
             <input
               placeholder="Enter your email address"
-              className="flex-1 md:w-64 px-4 py-2.5 rounded-lg border border-slate-200 text-sm outline-none focus:border-blue-400"
+              className="flex-1 md:w-64 px-4 py-2.5 rounded-lg border border-slate-200 text-sm outline-none focus:border-blue-400 bg-white"
             />
-            <button className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg">
+            <button className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg whitespace-nowrap">
               Subscribe
             </button>
           </div>

@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { Logo, Avatar } from "@/components/Shared";
+import TopbarActions from "@/components/TopbarActions";
+import BrandButton from "@/components/BrandButton";
 import {
   Bell,
   Bookmark,
@@ -143,12 +145,10 @@ export default function PostJobPage() {
       )}
 
       <div className="lg:pl-[240px]">
-        <header className="sticky top-0 z-30 flex h-[74px] items-center gap-4 border-b border-[#e8edf5] bg-white px-4 sm:px-6">
-          <button className="lg:hidden" onClick={() => setOpen(true)} aria-label="Menu">
-            <Menu className="h-6 w-6" />
-          </button>
+        <header className="sticky top-0 z-30 flex min-h-[74px] flex-wrap items-center gap-4 border-b border-[#e8edf5] bg-white px-4 py-3 sm:px-6">
+          <BrandButton onClick={() => setOpen(true)} />
 
-          <div className="relative w-full max-w-[560px]">
+          <div className="relative order-2 w-full min-w-0 basis-full sm:max-w-[560px] lg:order-1 lg:flex-1">
             <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-500" />
             <input
               className="h-11 w-full rounded-xl border border-[#e2e8f2] bg-[#f8fafc] pl-11 pr-3 text-[13px] outline-none focus:border-brand-500"
@@ -156,35 +156,25 @@ export default function PostJobPage() {
             />
           </div>
 
-          <div className="hidden items-center gap-2 rounded-xl border border-[#e2e8f2] bg-[#f8fafc] px-3.5 py-2.5 text-[13px] text-ink-700 sm:flex">
+          <div className="hidden items-center gap-2 rounded-xl border border-[#e2e8f2] bg-[#f8fafc] px-3.5 py-2.5 text-[13px] text-ink-700 lg:order-2 lg:flex">
             <MapPin className="h-4 w-4 text-ink-500" /> Saudi Arabia
           </div>
 
-          <button className="btn-primary hidden h-11 px-5 sm:flex">
+          <button className="btn-primary hidden h-11 px-5 lg:order-3 lg:flex">
             <Search className="h-4 w-4" /> Search
           </button>
 
-          <div className="ml-auto flex items-center gap-4">
-            <button className="hidden text-ink-500 hover:text-brand-500 sm:block">
-              <MessageSquare className="h-[21px] w-[21px]" />
-            </button>
-            <button className="relative text-ink-500 hover:text-brand-500">
-              <Bell className="h-[21px] w-[21px]" />
-              <span className="absolute -right-1.5 -top-1.5 grid h-[17px] w-[17px] place-items-center rounded-full bg-red-500 text-[10px] font-bold text-white">
-                3
-              </span>
-            </button>
-            <div className="flex items-center gap-2.5">
+          <TopbarActions
+            bellCount={3}
+            message
+            avatar={
               <span className="grid h-8 w-8 place-items-center rounded-full bg-brand-100 text-[12px] font-bold text-brand-600">
                 SA
               </span>
-              <span className="hidden leading-tight sm:block">
-                <span className="block text-[13px] font-bold">Saudi Aramco</span>
-                <span className="block text-[11px] text-ink-500">Employer</span>
-              </span>
-              <ChevronDown className="h-4 w-4 text-ink-500" />
-            </div>
-          </div>
+            }
+            name="Saudi Aramco"
+            role="Employer"
+          />
         </header>
 
         <main className="mx-auto max-w-[1100px] px-4 py-7 sm:px-6 lg:px-8">
@@ -209,7 +199,7 @@ export default function PostJobPage() {
           </div>
 
           {/* Stepper */}
-          <div className="mb-7 flex items-center">
+          <div className="mb-7 flex items-center overflow-x-auto no-scrollbar">
             {wizardSteps.map((s, i) => (
               <div key={s.label} className="flex flex-1 items-center last:flex-none">
                 <button onClick={() => setStep(i)} className="flex flex-col items-center gap-2">
@@ -232,7 +222,7 @@ export default function PostJobPage() {
                 </button>
                 {i < wizardSteps.length - 1 && (
                   <span
-                    className={`mx-3 mb-6 h-[2px] flex-1 rounded-full ${
+                    className={`mx-1 mb-6 h-[2px] flex-1 rounded-full sm:mx-3 ${
                       i < step ? "bg-brand-500" : "bg-[#dbe4f2]"
                     }`}
                   />

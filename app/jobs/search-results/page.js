@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Logo, Avatar } from "@/components/Shared";
+import TopbarActions from "@/components/TopbarActions";
 import {
   Bell,
   BellRing,
@@ -143,84 +144,72 @@ export default function JobSearchResultsPage() {
   return (
     <div className="min-h-screen bg-[#f5f7fb]">
       <header className="sticky top-0 z-30 border-b border-[#e8edf5] bg-white">
-        <div className="mx-auto flex min-h-[74px] max-w-[1440px] flex-wrap items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
+        <div className="mx-auto flex min-h-[74px] max-w-[1440px] flex-wrap items-center gap-x-4 gap-y-3 px-4 py-3 sm:px-6 lg:px-8">
           <Logo compact />
 
-          <div className="ml-4 flex min-w-0 flex-1 items-center gap-2 rounded-xl border border-[#e2e8f2] bg-[#f8fafc] pr-1.5">
+          <div className="order-2 flex w-full min-w-0 basis-full items-center gap-2 rounded-xl border border-[#e2e8f2] bg-[#f8fafc] pr-1.5 lg:order-2 lg:flex-1">
             <div className="flex min-w-0 flex-1 items-center gap-2 px-3.5">
               <Search className="h-4 w-4 shrink-0 text-ink-500" />
               <input
-                className="h-11 w-full bg-transparent text-[13px] outline-none placeholder:text-ink-500"
+                className="h-11 w-full min-w-0 bg-transparent text-[13px] outline-none placeholder:text-ink-500"
                 defaultValue="Drilling Engineer"
               />
             </div>
             <div className="hidden items-center gap-2 border-l border-[#e2e8f2] px-3.5 sm:flex">
               <MapPin className="h-4 w-4 shrink-0 text-ink-500" />
               <input
-                className="h-11 w-[160px] bg-transparent text-[13px] outline-none placeholder:text-ink-500"
+                className="h-11 w-[120px] bg-transparent text-[13px] outline-none placeholder:text-ink-500 lg:w-[160px]"
                 defaultValue="Saudi Arabia"
               />
             </div>
-            <button className="btn-primary h-11 shrink-0 px-5">
-              <Search className="h-4 w-4" /> Search
+            <button className="btn-primary h-11 shrink-0 px-3 sm:px-5">
+              <Search className="h-4 w-4" /> <span className="hidden xs:inline">Search</span>
             </button>
           </div>
 
-          <button className="hidden items-center gap-1 text-[13px] font-semibold text-brand-500 lg:flex">
+          <button className="hidden items-center gap-1 text-[13px] font-semibold text-brand-500 lg:order-3 lg:flex">
             Advanced Search <ChevronDown className="h-4 w-4" />
           </button>
 
-          <div className="ml-auto flex items-center gap-4">
-            <button className="text-ink-500 hover:text-brand-500">
-              <Heart className="h-[21px] w-[21px]" />
-            </button>
-            <button className="relative text-ink-500 hover:text-brand-500">
-              <Bell className="h-[21px] w-[21px]" />
-              <span className="absolute -right-1.5 -top-1.5 grid h-[17px] w-[17px] place-items-center rounded-full bg-red-500 text-[10px] font-bold text-white">
-                2
-              </span>
-            </button>
-            <div className="flex items-center gap-2.5">
-              <Avatar size={34} />
-              <span className="hidden leading-tight sm:block">
-                <span className="block text-[13px] font-bold">John Smith</span>
-                <span className="block text-[11px] text-ink-500">Job Seeker</span>
-              </span>
-              <ChevronDown className="h-4 w-4 text-ink-500" />
-            </div>
-          </div>
+          <TopbarActions
+            heart
+            bellCount={2}
+            avatar={<Avatar size={34} />}
+            name="John Smith"
+            role="Job Seeker"
+          />
         </div>
       </header>
 
       <div className="mx-auto max-w-[1440px] px-4 py-6 sm:px-6 lg:px-8">
-        <nav className="flex items-center gap-2 text-[12.5px] text-ink-500">
+        <nav className="flex flex-wrap items-center gap-2 text-[12.5px] text-ink-500">
           <span>Home</span>
-          <ChevronRight className="h-3.5 w-3.5" />
+          <ChevronRight className="h-3.5 w-3.5 shrink-0" />
           <span>Jobs</span>
-          <ChevronRight className="h-3.5 w-3.5" />
+          <ChevronRight className="h-3.5 w-3.5 shrink-0" />
           <span className="text-ink-700">Search Results</span>
         </nav>
 
-        <div className="mt-4 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-          <div>
-            <h1 className="text-[24px] font-extrabold tracking-tight">Job Search Results</h1>
-            <p className="mt-2 text-[13px] text-ink-500">
-              Showing results for &quot;Drilling Engineer&quot; in Saudi Arabia
-            </p>
+          <div className="mt-4 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between">
+            <div className="min-w-0">
+              <h1 className="text-[24px] font-extrabold tracking-tight break-words">Job Search Results</h1>
+              <p className="mt-2 text-[13px] text-ink-500">
+                Showing results for &quot;Drilling Engineer&quot; in Saudi Arabia
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-3 shrink-0">
+              <span className="text-[12.5px] text-ink-500 whitespace-nowrap">1–20 of 248 jobs</span>
+              <select className="select w-full sm:w-auto sm:min-w-[170px]" defaultValue="Sort by: Most Relevant">
+                <option>Sort by: Most Relevant</option>
+                <option>Sort by: Newest</option>
+                <option>Sort by: Salary</option>
+              </select>
+            </div>
           </div>
-          <div className="flex items-center gap-3">
-            <span className="text-[12.5px] text-ink-500">1–20 of 248 jobs</span>
-            <select className="select w-auto min-w-[170px]" defaultValue="Sort by: Most Relevant">
-              <option>Sort by: Most Relevant</option>
-              <option>Sort by: Newest</option>
-              <option>Sort by: Salary</option>
-            </select>
-          </div>
-        </div>
 
-        <div className="mt-6 grid gap-5 md:grid-cols-[260px_minmax(0,1fr)_300px]">
-          {/* Filters */}
-          <aside className="card h-fit p-5">
+          <div className="mt-6 grid grid-cols-1 gap-5 lg:grid-cols-[260px_minmax(0,1fr)_300px]">
+            {/* Filters */}
+            <aside className="card h-fit p-5 w-full lg:w-auto">
             <div className="mb-1 flex items-center justify-between">
               <h3 className="text-[14.5px] font-bold">Filter Jobs</h3>
               <button className="text-[12px] font-semibold text-brand-500">Clear All</button>
@@ -300,7 +289,7 @@ export default function JobSearchResultsPage() {
           </aside>
 
           {/* Results */}
-          <div>
+          <div className="min-w-0">
             <div className="mb-4 flex flex-wrap items-center gap-2.5">
               <span className="chip flex items-center gap-1.5 bg-brand-50 text-brand-600">
                 Drilling Engineer
@@ -385,26 +374,28 @@ export default function JobSearchResultsPage() {
             </div>
 
             {/* Pagination */}
-            <div className="mt-6 flex items-center justify-center gap-2">
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
               <button className="btn-ghost h-9 px-3 text-[12.5px]">
-                <ChevronLeft className="h-4 w-4" /> Previous
+                <ChevronLeft className="h-4 w-4" /> <span className="hidden sm:inline">Previous</span>
               </button>
-              {[1, 2, 3, 4, 5].map((p) => (
-                <button
-                  key={p}
-                  className={`grid h-9 w-9 place-items-center rounded-lg text-[12.5px] font-semibold ${
-                    p === 1 ? "bg-brand-500 text-white" : "border border-[#e2e8f2] text-ink-700 hover:bg-slate-50"
-                  }`}
-                >
-                  {p}
+              <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2">
+                {[1, 2, 3, 4, 5].map((p) => (
+                  <button
+                    key={p}
+                    className={`grid h-9 w-9 place-items-center rounded-lg text-[12.5px] font-semibold ${
+                      p === 1 ? "bg-brand-500 text-white" : "border border-[#e2e8f2] text-ink-700 hover:bg-slate-50"
+                    }`}
+                  >
+                    {p}
+                  </button>
+                ))}
+                <span className="px-1 text-ink-500">...</span>
+                <button className="grid h-9 w-9 place-items-center rounded-lg border border-[#e2e8f2] text-[12.5px] font-semibold text-ink-700 hover:bg-slate-50">
+                  13
                 </button>
-              ))}
-              <span className="px-1 text-ink-500">...</span>
-              <button className="grid h-9 w-9 place-items-center rounded-lg border border-[#e2e8f2] text-[12.5px] font-semibold text-ink-700 hover:bg-slate-50">
-                13
-              </button>
+              </div>
               <button className="btn-ghost h-9 px-3 text-[12.5px]">
-                Next <ChevronRight className="h-4 w-4" />
+                <span className="hidden sm:inline">Next</span> <ChevronRight className="h-4 w-4" />
               </button>
             </div>
           </div>

@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { Logo, Avatar } from "@/components/Shared";
+import TopbarActions from "@/components/TopbarActions";
+import BrandButton from "@/components/BrandButton";
 import {
   Bell,
   Briefcase,
@@ -247,12 +249,10 @@ export default function MyJobsPage() {
       )}
 
       <div className="lg:pl-[260px]">
-        <header className="sticky top-0 z-30 flex h-[74px] items-center gap-4 border-b border-[#e8edf5] bg-white px-4 sm:px-6">
-          <button className="lg:hidden" onClick={() => setOpen(true)} aria-label="Menu">
-            <Menu className="h-6 w-6" />
-          </button>
+        <header className="sticky top-0 z-30 flex min-h-[74px] flex-wrap items-center gap-4 border-b border-[#e8edf5] bg-white px-4 py-3 sm:px-6">
+          <BrandButton onClick={() => setOpen(true)} />
 
-          <div className="relative w-full max-w-[600px]">
+          <div className="relative order-2 w-full min-w-0 basis-full sm:max-w-[600px] lg:order-1 lg:flex-1">
             <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-500" />
             <input
               className="h-11 w-full rounded-xl border border-[#e2e8f2] bg-[#f8fafc] pl-11 pr-16 text-[13px] outline-none focus:border-brand-500"
@@ -263,25 +263,13 @@ export default function MyJobsPage() {
             </kbd>
           </div>
 
-          <div className="ml-auto flex items-center gap-4">
-            <button className="hidden text-ink-500 hover:text-brand-500 sm:block">
-              <MessageSquare className="h-[21px] w-[21px]" />
-            </button>
-            <button className="relative text-ink-500 hover:text-brand-500">
-              <Bell className="h-[21px] w-[21px]" />
-              <span className="absolute -right-1.5 -top-1.5 grid h-[17px] w-[17px] place-items-center rounded-full bg-red-500 text-[10px] font-bold text-white">
-                3
-              </span>
-            </button>
-            <div className="flex items-center gap-2.5">
-              <Avatar size={34} />
-              <span className="hidden leading-tight sm:block">
-                <span className="block text-[13px] font-bold">John Smith</span>
-                <span className="block text-[11px] text-ink-500">Employer</span>
-              </span>
-              <ChevronDown className="h-4 w-4 text-ink-500" />
-            </div>
-          </div>
+          <TopbarActions
+            bellCount={3}
+            message
+            avatar={<Avatar size={34} />}
+            name="John Smith"
+            role="Employer"
+          />
         </header>
 
         <main className="mx-auto max-w-[1440px] px-4 py-7 sm:px-6 lg:px-8">
@@ -334,17 +322,17 @@ export default function MyJobsPage() {
 
             {/* Filters */}
             <div className="flex flex-wrap items-center gap-3 px-5 py-4 sm:px-6">
-              <div className="relative min-w-[220px] flex-1">
+              <div className="relative w-full sm:w-auto sm:min-w-[220px] sm:flex-1">
                 <Search className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-500" />
                 <input className="input pl-10" placeholder="Search by job title, role..." />
               </div>
-              <select className="select w-auto min-w-[160px]" defaultValue="All Departments">
+              <select className="select w-full sm:w-auto sm:min-w-[160px]" defaultValue="All Departments">
                 <option>All Departments</option>
                 <option>Operations</option>
                 <option>Engineering</option>
                 <option>HSE</option>
               </select>
-              <select className="select w-auto min-w-[150px]" defaultValue="All Locations">
+              <select className="select w-full sm:w-auto sm:min-w-[150px]" defaultValue="All Locations">
                 <option>All Locations</option>
                 <option>Saudi Arabia</option>
                 <option>UAE</option>
@@ -353,7 +341,7 @@ export default function MyJobsPage() {
               <button className="btn-ghost">
                 <Filter className="h-4 w-4" /> More Filters
               </button>
-              <select className="select w-auto min-w-[150px]" defaultValue="Sort by: Newest">
+              <select className="select w-full sm:w-auto sm:min-w-[150px]" defaultValue="Sort by: Newest">
                 <option>Sort by: Newest</option>
                 <option>Sort by: Oldest</option>
                 <option>Sort by: Title A-Z</option>
