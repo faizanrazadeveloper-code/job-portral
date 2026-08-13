@@ -74,6 +74,9 @@ body {
     .nav-item-active {
         @apply bg-brand-50 text-brand-500;
     }
+    .toolbar-btn {
+        @apply grid h-8 w-8 place-items-center rounded-md text-ink-500 transition hover:bg-slate-100 hover:text-ink-900;
+    }
 }
 
 
