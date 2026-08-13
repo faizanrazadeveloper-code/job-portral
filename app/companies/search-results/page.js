@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Logo, Avatar } from "@/components/Shared";
+import TopbarActions from "@/components/TopbarActions";
 import {
   Bell,
   BellRing,
@@ -125,12 +126,12 @@ function FilterSection({ title, children, defaultOpen = true }) {
 
 export default function CompanySearchResultsPage() {
   return (
-    <div className="min-h-screen bg-[#f5f7fb]">
+    <div className="min-h-screen overflow-x-hidden bg-[#f5f7fb]">
       <header className="sticky top-0 z-30 border-b border-[#e8edf5] bg-white">
-        <div className="mx-auto flex min-h-[74px] max-w-[1440px] flex-wrap items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
+        <div className="mx-auto flex min-h-[74px] max-w-[1440px] flex-wrap items-center gap-x-4 gap-y-3 px-4 py-3 sm:px-6 lg:px-8">
           <Logo compact />
 
-          <div className="ml-4 flex min-w-0 flex-1 items-center gap-2 rounded-xl border border-[#e2e8f2] bg-[#f8fafc] pr-1.5">
+          <div className="order-2 flex w-full min-w-0 basis-full items-center gap-2 rounded-xl border border-[#e2e8f2] bg-[#f8fafc] pr-1.5 lg:order-2 lg:flex-1">
             <div className="flex min-w-0 flex-1 items-center gap-2 px-3.5">
               <Search className="h-4 w-4 shrink-0 text-ink-500" />
               <input
@@ -150,25 +151,13 @@ export default function CompanySearchResultsPage() {
             </button>
           </div>
 
-          <div className="ml-auto flex items-center gap-4">
-            <button className="text-ink-500 hover:text-brand-500">
-              <Heart className="h-[21px] w-[21px]" />
-            </button>
-            <button className="relative text-ink-500 hover:text-brand-500">
-              <Bell className="h-[21px] w-[21px]" />
-              <span className="absolute -right-1.5 -top-1.5 grid h-[17px] w-[17px] place-items-center rounded-full bg-red-500 text-[10px] font-bold text-white">
-                3
-              </span>
-            </button>
-            <div className="flex items-center gap-2.5">
-              <Avatar size={34} />
-              <span className="hidden leading-tight sm:block">
-                <span className="block text-[13px] font-bold">John Smith</span>
-                <span className="block text-[11px] text-ink-500">Job Seeker</span>
-              </span>
-              <ChevronDown className="h-4 w-4 text-ink-500" />
-            </div>
-          </div>
+          <TopbarActions
+            heart
+            bellCount={3}
+            avatar={<Avatar size={34} />}
+            name="John Smith"
+            role="Job Seeker"
+          />
         </div>
       </header>
 
@@ -188,9 +177,9 @@ export default function CompanySearchResultsPage() {
               Showing results for &quot;Oil &amp; Gas&quot; in Saudi Arabia
             </p>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <span className="text-[12.5px] text-ink-500">1–20 of 186 companies</span>
-            <select className="select w-auto min-w-[170px]" defaultValue="Sort by: Most Relevant">
+            <select className="select w-full sm:w-auto sm:min-w-[170px]" defaultValue="Sort by: Most Relevant">
               <option>Sort by: Most Relevant</option>
               <option>Sort by: Most Jobs</option>
               <option>Sort by: Name</option>

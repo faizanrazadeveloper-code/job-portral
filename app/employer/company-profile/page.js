@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { Logo, Avatar } from "@/components/Shared";
+import TopbarActions from "@/components/TopbarActions";
+import BrandButton from "@/components/BrandButton";
 import {
   Bell,
   Briefcase,
@@ -157,12 +159,10 @@ export default function CompanyProfilePage() {
 
       <div className="lg:pl-[268px]">
         {/* Topbar */}
-        <header className="sticky top-0 z-30 flex h-[74px] items-center gap-4 border-b border-[#e8edf5] bg-white px-4 sm:px-6">
-          <button className="lg:hidden" onClick={() => setOpen(true)} aria-label="Menu">
-            <Menu className="h-6 w-6" />
-          </button>
+        <header className="sticky top-0 z-30 flex min-h-[74px] flex-wrap items-center gap-x-4 gap-y-3 border-b border-[#e8edf5] bg-white px-4 sm:px-6">
+          <BrandButton onClick={() => setOpen(true)} />
 
-          <div className="relative w-full max-w-[600px]">
+          <div className="relative order-2 w-full min-w-0 basis-full sm:max-w-[600px] lg:order-1 lg:flex-1">
             <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-500" />
             <input
               className="h-11 w-full rounded-xl border border-[#e2e8f2] bg-[#f8fafc] pl-11 pr-16 text-[13px] outline-none focus:border-brand-500"
@@ -173,22 +173,12 @@ export default function CompanyProfilePage() {
             </kbd>
           </div>
 
-          <div className="ml-auto flex items-center gap-4">
-            <button className="hidden text-ink-500 hover:text-brand-500 sm:block">
-              <MessageSquare className="h-[21px] w-[21px]" />
-            </button>
-            <button className="relative text-ink-500 hover:text-brand-500">
-              <Bell className="h-[21px] w-[21px]" />
-              <span className="absolute -right-1.5 -top-1.5 grid h-[17px] w-[17px] place-items-center rounded-full bg-red-500 text-[10px] font-bold text-white">
-                5
-              </span>
-            </button>
-            <div className="flex items-center gap-2.5">
-              <Flame className="h-7 w-7 fill-brand-500 text-brand-500" strokeWidth={1} />
-              <span className="hidden text-[13px] font-bold sm:block">Energy Tail Ltd.</span>
-              <ChevronDown className="h-4 w-4 text-ink-500" />
-            </div>
-          </div>
+          <TopbarActions
+            bellCount={5}
+            message
+            avatar={<Flame className="h-7 w-7 fill-brand-500 text-brand-500" strokeWidth={1} />}
+            name="Energy Tail Ltd."
+          />
         </header>
 
         <main className="mx-auto max-w-[1320px] px-4 py-7 sm:px-6 lg:px-8">

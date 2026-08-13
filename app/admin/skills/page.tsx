@@ -31,14 +31,48 @@ export default function SkillsPage() {
         <AdminTopbar variant="light" />
 
         <main className="flex-1 p-6 space-y-6">
-          <AdminPageHeader crumbs={["Dashboard", "Skills"]} title="Skills" addLabel="Add New Skill" />
+          <AdminPageHeader
+            crumbs={["Dashboard", "Skills"]}
+            title="Skills"
+            addLabel="Add New Skill"
+          />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            <AdminStatCard icon={LayoutGrid} tone="blue" label="Total Skills" value={d.stats.total} hint="All skills in system" />
-            <AdminStatCard icon={ShieldCheck} tone="green" label="Active Skills" value={d.stats.active} hint="Currently active" />
-            <AdminStatCard icon={LayoutGrid} tone="orange" label="Inactive Skills" value={d.stats.inactive} hint="Currently inactive" />
-            <AdminStatCard icon={Briefcase} tone="purple" label="Skills in Demand" value={d.stats.demand} hint="High demand skills" />
-            <AdminStatCard icon={Briefcase} tone="blue" label="Jobs Using Skills" value={d.stats.jobs.toLocaleString()} hint="Across all jobs" />
+            <AdminStatCard
+              icon={LayoutGrid}
+              tone="blue"
+              label="Total Skills"
+              value={d.stats.total}
+              hint="All skills in system"
+            />
+            <AdminStatCard
+              icon={ShieldCheck}
+              tone="green"
+              label="Active Skills"
+              value={d.stats.active}
+              hint="Currently active"
+            />
+            <AdminStatCard
+              icon={LayoutGrid}
+              tone="orange"
+              label="Inactive Skills"
+              value={d.stats.inactive}
+              hint="Currently inactive"
+            />
+            <AdminStatCard
+              icon={Briefcase}
+              tone="purple"
+              label="Skills in Demand"
+              value={d.stats.demand}
+              hint="High demand skills"
+            />
+            <AdminStatCard
+              icon={Briefcase}
+              tone="blue"
+              label="Jobs Using Skills"
+              value={d.stats.jobs.toLocaleString()}
+              hint="Across all jobs"
+            />
           </div>
 
           <div className="grid grid-cols-1 xl:grid-cols-[1fr_320px] gap-6 items-start">
@@ -48,7 +82,9 @@ export default function SkillsPage() {
                 <table className="w-full text-left">
                   <thead>
                     <tr className="border-t border-b border-slate-100 text-[12px] font-semibold text-slate-400 uppercase tracking-wide">
-                      <th className="px-5 py-3 w-8"><input type="checkbox" /></th>
+                      <th className="px-5 py-3 w-8">
+                        <input type="checkbox" />
+                      </th>
                       <th className="px-2 py-3">Skill Name</th>
                       <th className="px-2 py-3">Category</th>
                       <th className="px-2 py-3">Jobs Count</th>
@@ -60,17 +96,27 @@ export default function SkillsPage() {
                   </thead>
                   <tbody>
                     {d.rows.map((r) => (
-                      <tr key={r.name} className="border-b border-slate-50 last:border-0 hover:bg-slate-50/60">
-                        <td className="px-5 py-3.5"><input type="checkbox" /></td>
+                      <tr
+                        key={r.name}
+                        className="border-b border-slate-50 last:border-0 hover:bg-slate-50/60"
+                      >
+                        <td className="px-5 py-3.5">
+                          <input type="checkbox" />
+                        </td>
                         <td className="px-2 py-3.5">
                           <div className="flex items-center gap-3">
                             <div
                               className="w-9 h-9 rounded-lg flex items-center justify-center text-sm font-semibold shrink-0"
-                              style={{ background: r.color + "1a", color: r.color }}
+                              style={{
+                                background: r.color + "1a",
+                                color: r.color,
+                              }}
                             >
                               {r.icon}
                             </div>
-                            <div className="text-[13.5px] font-semibold text-slate-800">{r.name}</div>
+                            <div className="text-[13.5px] font-semibold text-slate-800">
+                              {r.name}
+                            </div>
                           </div>
                         </td>
                         <td className="px-2 py-3.5">
@@ -78,16 +124,26 @@ export default function SkillsPage() {
                             {r.category}
                           </span>
                         </td>
-                        <td className="px-2 py-3.5 text-[13.5px] font-semibold text-blue-600">{r.jobs.toLocaleString()}</td>
+                        <td className="px-2 py-3.5 text-[13.5px] font-semibold text-blue-600">
+                          {r.jobs.toLocaleString()}
+                        </td>
                         <td className="px-2 py-3.5">
-                          <span className={`inline-flex items-center gap-1.5 text-[12px] font-medium px-2 py-1 rounded-md ${demandTone[r.demand]}`}>
+                          <span
+                            className={`inline-flex items-center gap-1.5 text-[12px] font-medium px-2 py-1 rounded-md ${demandTone[r.demand]}`}
+                          >
                             <span className="w-1.5 h-1.5 rounded-full bg-current" />
                             {r.demand}
                           </span>
                         </td>
-                        <td className="px-2 py-3.5"><AdminStatusBadge active={r.active} /></td>
-                        <td className="px-2 py-3.5 text-[13px] text-slate-500">{r.order}</td>
-                        <td className="px-5 py-3.5"><AdminRowActions /></td>
+                        <td className="px-2 py-3.5">
+                          <AdminStatusBadge active={r.active} />
+                        </td>
+                        <td className="px-2 py-3.5 text-[13px] text-slate-500">
+                          {r.order}
+                        </td>
+                        <td className="px-5 py-3.5">
+                          <AdminRowActions />
+                        </td>
                       </tr>
                     ))}
                   </tbody>
@@ -98,9 +154,13 @@ export default function SkillsPage() {
 
             <div className="space-y-6">
               <div className="bg-white rounded-2xl border border-slate-100 p-5">
-                <div className="text-[14px] font-bold text-slate-900 mb-4">Skills by Category</div>
+                <div className="text-[14px] font-bold text-slate-900 mb-4">
+                  Skills by Category
+                </div>
                 <AdminDonutChart data={d.donut} total={d.stats.total} />
-                <button className="w-full mt-4 text-[12.5px] font-semibold text-blue-600">View all categories →</button>
+                <button className="w-full mt-4 text-[12.5px] font-semibold text-blue-600">
+                  View all categories →
+                </button>
               </div>
               <AdminTopList
                 title="Top Skills by Jobs"
@@ -111,7 +171,9 @@ export default function SkillsPage() {
             </div>
           </div>
 
-          <div className="text-center text-xs text-slate-400 pt-2">© 2025 Energy Tail. All rights reserved.</div>
+          <div className="text-center text-xs text-slate-400 pt-2">
+            © 2025 Energy Tail. All rights reserved.
+          </div>
         </main>
       </div>
     </div>

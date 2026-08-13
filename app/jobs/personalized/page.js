@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { Logo } from "@/components/Shared";
+import TopbarActions from "@/components/TopbarActions";
+import BrandButton from "@/components/BrandButton";
 import {
   Award,
   Bell,
@@ -232,11 +234,9 @@ export default function PersonalizedJobsPage() {
 
       <div className="lg:pl-[240px]">
         <header className="sticky top-0 z-30 flex min-h-[74px] flex-wrap items-center gap-4 border-b border-[#e8edf5] bg-white px-4 py-3 sm:px-6">
-          <button className="lg:hidden" onClick={() => setOpen(true)} aria-label="Menu">
-            <Menu className="h-6 w-6" />
-          </button>
+          <BrandButton onClick={() => setOpen(true)} />
 
-          <div className="flex min-w-0 flex-1 items-center gap-2 rounded-xl border border-[#e2e8f2] bg-[#f8fafc] pr-1.5">
+          <div className="order-2 flex w-full min-w-0 basis-full items-center gap-2 rounded-xl border border-[#e2e8f2] bg-[#f8fafc] pr-1.5 lg:order-1 lg:flex-1">
             <div className="flex min-w-0 flex-1 items-center gap-2 px-3.5">
               <Search className="h-4 w-4 shrink-0 text-ink-500" />
               <input
@@ -256,28 +256,16 @@ export default function PersonalizedJobsPage() {
             </button>
           </div>
 
-          <div className="ml-auto flex items-center gap-4">
-            <button className="text-ink-500 hover:text-brand-500">
-              <Heart className="h-[21px] w-[21px]" />
-            </button>
-            <button className="relative text-ink-500 hover:text-brand-500">
-              <Bell className="h-[21px] w-[21px]" />
-              <span className="absolute -right-1.5 -top-1.5 grid h-[17px] w-[17px] place-items-center rounded-full bg-red-500 text-[10px] font-bold text-white">
-                3
-              </span>
-            </button>
-            <button className="text-ink-500 hover:text-brand-500">
-              <MessageSquare className="h-[21px] w-[21px]" />
-            </button>
-            <div className="flex items-center gap-2.5">
+          <TopbarActions
+            heart
+            bellCount={3}
+            message
+            avatar={
               <span className="grid h-9 w-9 place-items-center overflow-hidden rounded-full bg-gradient-to-b from-[#c58a63] to-[#7b4a2f]" />
-              <span className="hidden leading-tight sm:block">
-                <span className="block text-[13px] font-bold">John Smith</span>
-                <span className="block text-[11px] text-ink-500">Job Seeker</span>
-              </span>
-              <ChevronDown className="h-4 w-4 text-ink-500" />
-            </div>
-          </div>
+            }
+            name="John Smith"
+            role="Job Seeker"
+          />
         </header>
 
         <main className="mx-auto max-w-[1440px] px-4 py-7 sm:px-6 lg:px-8">
@@ -377,7 +365,7 @@ export default function PersonalizedJobsPage() {
                     </button>
                   ))}
                 </div>
-                <select className="select mb-2 w-auto min-w-[170px]" defaultValue="Sort by: Most Relevant">
+                <select className="select mb-2 w-full sm:w-auto sm:min-w-[170px]" defaultValue="Sort by: Most Relevant">
                   <option>Sort by: Most Relevant</option>
                   <option>Sort by: Newest</option>
                   <option>Sort by: Match %</option>

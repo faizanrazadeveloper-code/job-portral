@@ -102,7 +102,7 @@ export default function CompanyDetailsPage() {
       <MarketingHeader active="Companies" />
 
       <div className="mx-auto max-w-[1440px] px-4 pt-5 sm:px-6 lg:px-8">
-        <nav className="flex items-center gap-2 text-[12.5px] text-ink-500">
+        <nav className="flex flex-wrap items-center gap-2 text-[12.5px] text-ink-500">
           <span>Home</span>
           <ChevronRight className="h-3.5 w-3.5" />
           <span>Companies</span>
@@ -143,7 +143,7 @@ export default function CompanyDetailsPage() {
                 </div>
               </div>
 
-              <div className="flex shrink-0 gap-3">
+              <div className="flex shrink-0 flex-wrap gap-3">
                 <button
                   onClick={() => setFollowing((f) => !f)}
                   className="btn-ghost bg-white/95"
